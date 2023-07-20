@@ -18,8 +18,7 @@ const Profile = () => {
               Hello,
             </h1>
             <span>
-              <p className="profile-role-tagline">Je suis Gabriel,</p>
-              <p className="profile-role-tagline">développeur web full-stack et passionné de SEO</p>
+              <p className="profile-role-tagline">Je suis Gabriel, développeur web full-stack et passionné de SEO</p>
             </span>
           </div>
 
