@@ -6,6 +6,7 @@ import "./Profile.css";
 
 // Importez l'image en utilisant la fonction require
 import profilephoto from "../../assets/Home/profilephoto.jpg";
+import data from "../../datas.json"; // Import the JSON data
 
 const Profile = () => {
   return (
@@ -13,12 +14,9 @@ const Profile = () => {
       <div className="profile-columns">
         <div className="profile-details">
           <div className="profile-role">
-            <h1>
-              {/* <Typical steps={["Hello,", 1000]} /> */}
-              Hello,
-            </h1>
+            <h1>{data.greeting}</h1>
             <span>
-              <p className="profile-role-tagline">Je suis Gabriel, développeur web full-stack et passionné de SEO</p>
+              <p className="profile-role-tagline">{data.name}</p>
             </span>
           </div>
 
