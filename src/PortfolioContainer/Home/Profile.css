@@ -1,101 +1,153 @@
 /* Profile.css */
+:root {
+  --blue: #07498a;
+  --grey: #ffffff;
+  --orange: #ffa500;
+}
+
 .profile-container {
-    height: 100vh;
-    background-color: #e8e6e2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
+  min-height: 100vh;
+  background-color: #e8e6e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-columns {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px; /* Add the desired margin here */
+}
+
+.profile-details {
+  text-align: left;
+  margin: 20px; /* Increase margin for better spacing */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* Add a fixed height to the .profile-details div for better alignment of elements */
+  /* For smaller screens, it will take up 50% of the available space */
+  /* height: 50%; */
+}
+
+.profile-role {
+  margin-bottom: 20px;
+}
+
+.profile-role > h1 {
+  display: inline-block;
+  font-size: 50px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: var(--blue);
+  color: var(--grey);
+  padding: 10px 15px; /* Add the desired padding here */
+  margin-bottom: 60px;
+  position: relative; /* Permet de positionner le pseudo-élément ::before */
+}
+
+.profile-role > h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -59px; /* Ajustez la valeur pour déplacer la flèche vers la gauche */
+  border-top: 40px solid transparent; /* Augmentez la valeur pour rendre la flèche plus prononcée */
+  border-bottom: 40px solid transparent; /* Augmentez la valeur pour rendre la flèche plus prononcée */
+  border-right: 60px solid var(--blue); /* Couleur correspondant au fond du h1 */
+}
+
+.profile-role-tagline {
+  color: var(--orange);
+  font-size: 22px;
+}
+
+.profile-picture {
+  width: 80%;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+/* Styles pour les icônes et autres éléments inchangés */
+.icon {
+  color: #07498a;
+  margin-right: 20px;
+  padding: 2px;
+  border: 1px solid black;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: var(--orange);
+}
+
+/* Media Queries */
+@media (max-width: 1440px) {
   .profile-columns {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 20px; /* Ajoutez la marge souhaitée ici */
+    max-width: 900px; /* Adjust the maximum width for better alignment */
+    margin: 0 auto; /* Center the columns */
   }
-  
+
+  .profile-picture {
+    width: 60%; /* Reduce image size for wider screens like 1440px */
+    max-width: 400px; /* Set a maximum width for the image */
+    margin: auto; /* Center the image */
+  }
+}
+
+@media (max-width: 1024px) {
+  .profile-columns {
+    margin: 0 80px; /* Adjust margin for tablets */
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-columns {
+    flex-direction: column; /* Stack the columns for better display on small screens */
+    margin: 0 100px; /* Adjust margin for smaller screens */
+  }
+
   .profile-details {
     text-align: left;
-    margin: 0 10px;
+    margin: 20px; /* Increase margin for better spacing */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* Ajoutez une hauteur fixe à la div .profile-details */
-  }
-  
-  .profile-role {
-    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    /* Add a fixed height to the .profile-details div for better alignment of elements */
+    /* For smaller screens, it will take up 50% of the available space */
+    /* height: 50%; */
   }
 
   .profile-role > h1 {
-    display: inline-block;
-    font-size: 50px;
-    font-family: 'Press Start 2P', cursive;
-    background-color: var(--blue);
-    color: var(--grey);
-    padding: 10px 15px; /* Ajoutez ici le padding souhaité */
-    margin-bottom: 60px;
-    position: relative; /* Permet de positionner le pseudo-élément ::before */
+    font-size: 35px;
+  margin-bottom: 30px;
+
   }
-  
+
   .profile-role > h1::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -59px; /* Ajustez la valeur pour déplacer la flèche vers la gauche */
-    border-top: 40px solid transparent; /* Augmentez la valeur pour rendre la flèche plus prononcée */
-    border-bottom: 40px solid transparent; /* Augmentez la valeur pour rendre la flèche plus prononcée */
-    border-right: 60px solid var(--blue); /* Couleur correspondant au fond du h1 */
+    border-top: 31px solid transparent;
+    border-bottom: 31px solid transparent;
+}
+
+  .profile-role > h1 {
+    font-size: 35px; /* Reduce font size for smaller screens */
   }
-  
-  
-  
-  
+
   .profile-role-tagline {
-    color: var(--orange);
-    font-size: 22px;
+    font-size: 16px; /* Reduce font size for smaller screens */
   }
-  
+
   .profile-picture {
-    width: 40%;
-    position: relative;
-    overflow: hidden;
+    width: 50%; /* Reduce image size for smaller screens */
+    margin-top: 30px;
   }
-  
-  .profile-picture img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    position: relative;
-    z-index: 2;
-  }
-  
-  /* Créez la superposition pour le fond bleu */
-  .profile-picture::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 65%;
-    background-color: #07498a;
-    z-index: 1;
-  }
-  
-  /* Styles pour les icônes et autres éléments inchangés */
-  .icon {
-    color: #07498a;
-    margin-right: 20px;
-    padding: 2px;
-    border: 1px solid black;
-    transition: color 0.3s ease; /* Ajoutez la propriété de transition ici */
-  }
-  
-  .icon:hover {
-    color: var(--orange);
-  }
-  
-  
-  /* Autres styles pour le reste du composant inchangés */
-  
+}
