@@ -22,7 +22,6 @@
 
 .profile-details {
   text-align: left;
-  margin: 20px; /* Increase margin for better spacing */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,7 +62,7 @@
 }
 
 .profile-picture {
-  width: 80%;
+  width: 70%;
   position: relative;
   overflow: hidden;
 }
@@ -129,8 +128,15 @@
 
   .profile-role > h1 {
     font-size: 35px;
-  margin-bottom: 30px;
+    margin-bottom: 30px;
+    padding: 5px 10px; /* Add the desired padding here */
 
+  }
+
+
+  
+  .profile-role > h1::before {
+    display: none;
   }
 
   .profile-role > h1::before {
@@ -147,7 +153,7 @@
   }
 
   .profile-picture {
-    width: 50%; /* Reduce image size for smaller screens */
+    width: 80%; /* Reduce image size for smaller screens */
     margin-top: 30px;
   }
 }
