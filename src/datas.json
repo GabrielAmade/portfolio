@@ -1,4 +1,77 @@
 {
     "greeting": "Hello,",
-    "tagline": "Je suis Gabriel, développeur web full-stack et passionné de SEO"
+    "tagline": "Je suis Gabriel, développeur web full-stack et passionné de SEO",
+
+    "description_title_1": "Créateur du web, ",
+    "description_title_2": "passionné de code",
+    "description": "Je suis un Développeur Web Junior accroc au code sous toutes ses formes. Fraichement diplômé d’une formation en alternance d’un an, je cherche désormais un poste. Je suis également rédacteur web SEO. J’ai rédigé des centaines d’ articles pendant  près de 2 ans sur la plateforme ComeUp. Ayant eu l’opportunité de vivre à l’étranger pendant plusieurs années, je suis bilingue en anglais (et j’adore les sandwichs beurre de cacahouète-confiture). ",
+
+    "general_skills": [
+      "Bonne expérience avec les frameworks React, Express",
+      "Soucieux de proposer une expérience utilisateur agréable et fluide",
+      "Toujours à l’affut des nouvelles technologies et des dernières avancées"
+    ],
+
+
+    "studies": [
+      {
+        "name": "Formation “Développeur Web” avec Open Classroom en Alternance",
+        "years": "2022 - 2023",
+        "details": "400 heures de formation sur 12 mois // Formation en distancielle // Principales notions abordées : HTML-CSS, Javascript, React, Node JS, Méthode Agile"
+      },
+      {
+        "name": "Formation Développeur Web Full Stack",
+        "years": "04 - 07/2022",
+        "details": "Formation en présentiel // Apprentissage des bases du HTML/CSS, JS, PHP et Laravel //  Programmation Orientée Objet // Utilisation d'API"
+      },
+      {
+        "name": "Master en Design Urbain",
+        "years": "2011- 2013",
+        "details": "Université d’Aix-Marseille // Mention Bien"
+      }
+    ],
+
+
+    "projects": [
+      {
+        "name": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+        "details": "Intégrer la maquette du site en HTML et CSS // Respecter le visuel fourni // Rendre l’interface parfaitement responsive pour smartphone et tablette",
+        "skills" : "#html #css"
+      },
+      {
+        "name": "Créez une page web dynamique avec JavaScript",
+        "details": "Créer la page de présentation des travaux de l'architecte // Ajouter une page de connexion de l'administrateur du site // Afficher une fenêtre modale permettant d’ajouter et de supprimer de nouveaux projets",
+        "skills" : "#javascript"
+      },
+      {
+        "name": "Créez une application web de location immobilière avec React",
+        "details": "Créer les pages et les composants du site // Mettre en place les routes pour connecter ces pages // Ajouter des animations de carroussel et de collapse",
+        "skills" : "#react"
+
+      }
+    ],
+
+    
+      "testimonials": [
+        {
+          "name": "Guillaume",
+          "position": "Directeur Pédagogique",
+          "message": "Par sa démarche au fil des cours, des ateliers (exercices) et des projets, Gabriel a démontré à l’ensemble de l’équipe pédagogique une évidente envie de bien faire et une volonté de compréhension fine des notions qu’il met en pratique. Cette curiosité et cette détermination à acquérir des fondamentaux solides font de Gabriel, à mon sens, un très bon profil junior.",
+          "photo": "guillaume.jpg"
+        },
+        {
+          "name": "Adrien",
+          "position": "Créateur de contenu web",
+          "message": "Après plusieurs mois de collaboration avec Gabriel, les résultats sur le blog sont exceptionnels. Gabriel sait comment faire pour toucher nos lecteurs. Il sait comment leur parler, comment maintent leur attention et comment rédiger des articles vraiment intéressant à lire. Un talent rare ! Grace à Gabriel, notre blog a décollé. Et notre référencement aussi. Merci pour cette collaboration qui dépasse largement toutes mes attentes. Et celles de toute l'équipe.",
+          "photo": "adrien.jpg"
+        },
+        {
+          "name": "Eva",
+          "position": "Photographe professionnelle",
+          "message": "Je recommande vivement Gabriel en tant que rédacteur. Ses talents d'écriture captivants ont propulsé notre blog et attiré notre audience. Un professionnel fiable et créatif, il a dépassé toutes nos attentes. Une valeur ajoutée inestimable pour toute entreprise.",
+          "photo": "eva.jpg"
+        }
+      ]
   }
+
+

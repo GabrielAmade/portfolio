@@ -4,9 +4,8 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 // import Typical from "react-typical";
 import "./Profile.css";
 
-// Importez l'image en utilisant la fonction require
 import profilephoto from "../../assets/Home/profilephoto.jpg";
-import data from "../../datas.json"; // Import the JSON data
+import data from "../../datas.json"; 
 
 const Profile = () => {
   return (

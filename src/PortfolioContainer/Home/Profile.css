@@ -17,7 +17,7 @@
 .profile-columns {
   display: flex;
   justify-content: center;
-  margin: 0 20px; /* Add the desired margin here */
+  margin: 0 20px;
 }
 
 .profile-details {
@@ -26,8 +26,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  /* Add a fixed height to the .profile-details div for better alignment of elements */
-  /* For smaller screens, it will take up 50% of the available space */
+  padding-right: 100px;
   /* height: 50%; */
 }
 
