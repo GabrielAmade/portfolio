@@ -1,8 +1,8 @@
 /* Profile.css */
 :root {
-  --blue: #07498a;
-  --grey: #ffffff;
-  --orange: #ffa500;
+  --blue: #07498A;
+  --grey: #E8E6E2;
+  --orange: #FF7F50;
 }
 
 .profile-container {
@@ -40,19 +40,19 @@
   font-family: 'Press Start 2P', cursive;
   background-color: var(--blue);
   color: var(--grey);
-  padding: 10px 15px; /* Add the desired padding here */
+  padding: 10px 15px; 
   margin-bottom: 60px;
-  position: relative; /* Permet de positionner le pseudo-élément ::before */
+  position: relative; 
 }
 
 .profile-role > h1::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -59px; /* Ajustez la valeur pour déplacer la flèche vers la gauche */
-  border-top: 40px solid transparent; /* Augmentez la valeur pour rendre la flèche plus prononcée */
-  border-bottom: 40px solid transparent; /* Augmentez la valeur pour rendre la flèche plus prononcée */
-  border-right: 60px solid var(--blue); /* Couleur correspondant au fond du h1 */
+  left: -59px; 
+  border-top: 40px solid transparent; 
+  border-bottom: 40px solid transparent; 
+  border-right: 60px solid var(--blue); 
 }
 
 .profile-role-tagline {
@@ -74,7 +74,6 @@
   z-index: 2;
 }
 
-/* Styles pour les icônes et autres éléments inchangés */
 .icon {
   color: #07498a;
   margin-right: 20px;
@@ -90,49 +89,47 @@
 /* Media Queries */
 @media (max-width: 1440px) {
   .profile-columns {
-    max-width: 900px; /* Adjust the maximum width for better alignment */
-    margin: 0 auto; /* Center the columns */
+    max-width: 930px; 
+    margin: 0 auto; 
   }
 
   .profile-picture {
-    width: 60%; /* Reduce image size for wider screens like 1440px */
-    max-width: 400px; /* Set a maximum width for the image */
-    margin: auto; /* Center the image */
+    width: 60%; 
+    max-width: 400px; 
+    margin: auto; 
   }
 }
 
 @media (max-width: 1024px) {
   .profile-columns {
-    margin: 0 80px; /* Adjust margin for tablets */
+    margin: 0 80px; 
   }
 }
 
 @media (max-width: 767px) {
   .profile-columns {
-    flex-direction: column; /* Stack the columns for better display on small screens */
-    margin: 0 100px; /* Adjust margin for smaller screens */
+    flex-direction: column; 
+    margin: 0 100px; 
   }
 
   .profile-details {
-    text-align: left;
-    margin: 20px; /* Increase margin for better spacing */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
+    margin: 20px; 
     align-items: center;
-    /* Add a fixed height to the .profile-details div for better alignment of elements */
-    /* For smaller screens, it will take up 50% of the available space */
-    /* height: 50%; */
+    padding-right: 0;
+
   }
+
+
 
   .profile-role > h1 {
     font-size: 35px;
     margin-bottom: 30px;
-    padding: 5px 10px; /* Add the desired padding here */
+    padding: 5px 10px; 
 
   }
 
-
+ 
   
   .profile-role > h1::before {
     display: none;
@@ -144,15 +141,15 @@
 }
 
   .profile-role > h1 {
-    font-size: 35px; /* Reduce font size for smaller screens */
+    font-size: 35px; 
   }
 
   .profile-role-tagline {
-    font-size: 16px; /* Reduce font size for smaller screens */
+    font-size: 16px; 
   }
 
   .profile-picture {
-    width: 80%; /* Reduce image size for smaller screens */
+    width: 80%; 
     margin-top: 30px;
   }
 }
