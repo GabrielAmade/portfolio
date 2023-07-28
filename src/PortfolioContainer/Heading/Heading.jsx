@@ -4,10 +4,11 @@ import './Heading.css'
 function Heading(props) {
   return (
     <>
+    
         <div className='heading-container'>
             <div className='screen-heading'>
-                {/* <span>{props.title}</span> */}
-                <span>Test</span>
+                <span>{props.title}</span>
+                {/* <span>À Propos</span> */}
             </div>
         </div>
         <div className='heading-separator'>

@@ -2,9 +2,10 @@
     "greeting": "Hello,",
     "tagline": "Je suis Gabriel, développeur web full-stack et passionné de SEO",
 
+    
     "description_title_1": "Créateur du web, ",
     "description_title_2": "passionné de code",
-    "description": "Je suis un Développeur Web Junior accroc au code sous toutes ses formes. Fraichement diplômé d’une formation en alternance d’un an, je cherche désormais un poste. Je suis également rédacteur web SEO. J’ai rédigé des centaines d’ articles pendant  près de 2 ans sur la plateforme ComeUp. Ayant eu l’opportunité de vivre à l’étranger pendant plusieurs années, je suis bilingue en anglais (et j’adore les sandwichs beurre de cacahouète-confiture). ",
+    "description": "Je suis un Développeur Web Junior accroc au code sous toutes ses formes. Fraichement diplômé d’une formation en alternance d’un an, je cherche désormais un poste.\n\nJe suis également rédacteur web SEO. J’ai rédigé des centaines d’articles pendant près de 2 ans sur la plateforme ComeUp. \n\n Ayant eu l’opportunité de vivre à l’étranger pendant plusieurs années, je suis bilingue en anglais (et j’adore les sandwichs beurre de cacahouète-confiture).",
 
     "general_skills": [
       "Bonne expérience avec les frameworks React, Express",

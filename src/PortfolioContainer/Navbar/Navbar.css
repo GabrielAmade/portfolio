@@ -10,7 +10,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
     background-color: var(--grey);
+    border-bottom: 1px solid black;
   }
   
   .navbar-left {
@@ -33,11 +37,12 @@
   .navbar-right a:last-child {
     margin-right: 0;
   }
-  
-  .navbar-underline {
-    margin: 0 auto;
-    border-bottom: 1px solid black;
+
+  .navbar-right a:hover {
+    color: var(--orange);
   }
+  
+ 
   
   /* Media Queries */
   @media (max-width: 768px) {
