@@ -1,5 +1,4 @@
 .heading-container {
-    width: 100%;
     margin: 40px;
 }
 
@@ -20,4 +19,14 @@
     height: 2px;
     background-color: black;
     margin-bottom: 100px;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .screen-heading {
+        font-size: 35px;
+    }
+
 }
