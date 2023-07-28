@@ -1,12 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Heading from "../Heading/Heading"
 import data_fr from "../../datas_fr.json";
 import "./AboutMe.css"
+import CV_GABRIEL_AMADE from "../../assets/AboutMe/CV_GABRIEL_AMADE.pdf";
+
 
 function AboutMe(props) {
   return (
-      <div className='about-me-container screen-container'>
+      <>
       <Heading title={'À Propos'} />
+      <div className='about-me-container screen-container'>
       <div className='about-me-parent'>
         <div className='about-me-columns'>
           <div className='about-me-content'>
@@ -21,7 +24,7 @@ function AboutMe(props) {
             </div>
 
             <div className='about-me-cv'>
-                <a href="../assets/AboutMe/CV_GABRIEL_AMADE.pdf" download>
+                <a href={CV_GABRIEL_AMADE} target="_blank" rel="noopener noreferrer">
                     Télécharger mon CV
                 </a>
             </div>
@@ -36,6 +39,7 @@ function AboutMe(props) {
         </div>
       </div>
     </div>
+    </>
   )
 }
 
