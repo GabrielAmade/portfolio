@@ -86,3 +86,25 @@
 
 
 
+@media screen and (max-width: 768px) {
+    
+    .about-me-container {
+        justify-content: center;
+      }
+    
+    .about-me-columns {
+      flex-direction: column;
+    }
+
+    .about-me-cv {
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    
+    .about-me-content,
+    .about-me-general-skills {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
