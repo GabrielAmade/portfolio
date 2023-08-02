@@ -5,14 +5,19 @@ import "./Profile.css";
 import profilephoto from "../../assets/Home/profilephoto.jpg";
 import data_fr from "../../datas_fr.json";
 import data_en from "../../datas_en.json";
+import data_it from "../../datas_it.json"; // Importez les données en italien
 
 const Profile = () => {
   const [language, setLanguage] = useState("fr");
-  const data = language === "en" ? data_en : data_fr;
+  const data = language === "en" ? data_en : language === "it" ? data_it : data_fr;
 
   useEffect(() => {
     const detectedLanguage = navigator.language.split("-")[0];
-    setLanguage(detectedLanguage);
+    if (detectedLanguage === "fr" || detectedLanguage === "en" || detectedLanguage === "it") {
+      setLanguage(detectedLanguage);
+    } else {
+      setLanguage("en");
+    }
   }, []);
 
   return (
