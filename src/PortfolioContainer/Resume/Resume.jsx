@@ -231,9 +231,9 @@ function Resume() {
           <div className="resume-card">
             <div className="resume-bullets">
               <div className="bullet-container">
-              
+
                 <div className="bullet-icons"></div>
-                <div className="bullet">{getBullets()}</div>
+                <div className="bullets">{getBullets()}</div>
               </div>
             </div>
             <div className="resume-bullet-details">{getResumeScreen()}</div>
