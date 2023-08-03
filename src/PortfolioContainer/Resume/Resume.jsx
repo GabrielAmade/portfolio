@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Heading from "../Heading/Heading";
-import "./Resume.css";
+import "./Resume.css"
+
 
 function Resume() {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
@@ -10,22 +11,21 @@ function Resume() {
     return (
       <div className="resume-heading">
         <div className="resume-main-heading">
-          <div className="heading-bullet">
-            <span>{props.heading ? props.heading : ""}</span>
-            {props.fromDate && props.toDate ? (
-              <div className="heading-date">
-                {props.fromDate + "_" + props.toDate}
-              </div>
-            ) : (
-              <div></div>
-            )}
-          </div>
-          <div className="resume-sub-heading">
-            <span>{props.subHeading ? props.subHeading : ""}</span>
-          </div>
-          <div className="resume-heading-description">
-            <span>{props.description ? props.description : ""}</span>
-          </div>
+          <div className="heading-bullet"></div>
+          <span>{props.heading ? props.heading : ""}</span>
+          {props.fromDate && props.toDate ? (
+            <div className="heading-date">
+              {props.fromDate + "-" + props.toDate}
+            </div>
+          ) : (
+            <div></div>
+          )}
+        </div>
+        <div className="resume-sub-heading">
+          <span>{props.subHeading ? props.subHeading : ""}</span>
+        </div>
+        <div className="resume-heading-description">
+          <span>{props.description ? props.description : ""}</span>
         </div>
       </div>
     );
@@ -36,115 +36,151 @@ function Resume() {
     { label: "Expériences professionnelles", logoSrc: "work-history.svg" },
     { label: "Technos", logoSrc: "programming-skills.svg" },
     { label: "Projets", logoSrc: "projects.svg" },
+    { label: "Intêrets", logoSrc: "interests.svg" },
   ];
 
   const programmingSkillsDetails = [
     { skill: "Javascript", ratingPercentage: 80 },
-    { skill: "React Js", ratingPercentage: 60 },
-    { skill: "Node Js", ratingPercentage: 60 },
+    { skill: "React JS", ratingPercentage: 60 },
+    { skill: "Node JS", ratingPercentage: 60 },
     { skill: "Mongo DB", ratingPercentage: 60 },
     { skill: "HTML", ratingPercentage: 85 },
-    { skill: "CSS", ratingPercentage: 85 },
+    { skill: "Express JS", ratingPercentage: 85 },
+    { skill: "Test 1", ratingPercentage: 85 },
+    { skill: "Test 2", ratingPercentage: 85 },
+    { skill: "Test 3", ratingPercentage: 85 },
   ];
 
   const projectsDetails = [
     {
-      title: "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+      title: "Personal Portfolio Website",
+      duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "Intégrer la maquette du site en HTML et CSS // Respecter le visuel fourni // Rendre l’interface parfaitement responsive pour smartphone et tablette",
-      skills: "#html #css",
+        "A Personal Portfolio website to showcase all my details and projects at one place.",
+      subHeading: "Technologies Used: React JS, Bootsrap",
     },
     {
-      title: "Créez une page web dynamique avec JavaScript",
+      title: "Mobile E-shop ",
+      duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "Créer la page de présentation des travaux de l'architecte // Ajouter une page de connexion de l'administrateur du site // Afficher une fenêtre modale permettant d’ajouter et de supprimer de nouveaux projets",
-      skills: "#javascript",
+        "An ecommerce application designed to sell products online wth payment system integration",
+      subHeading:
+        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
     },
     {
-      title: "Créez une application web de location immobilière avec React",
+      title: "Ecommerce Website ",
+      duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "Créer les pages et les composants du site // Mettre en place les routes pour connecter ces pages // Ajouter des animations de carroussel et de collapse",
-      skills: "#react",
+        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+      subHeading:
+        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
     },
   ];
-
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={
-          "Formation “Développeur Web” avec Open Classroom en Alternance"
-        }
-        subHeading={
-          "400 heures de formation sur 12 mois // Formation en distancielle // Principales notions abordées : HTML-CSS, Javascript, React, Node JS, Méthode Agile"
-        }
-        fromDate={"2022"}
-        toDate={"2023"}
+        heading={"University of Legon Accra, Ghana"}
+        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
+        fromDate={"2014"}
+        toDate={"2018"}
+      />
+
+      <ResumeHeading
+        heading={"National Youth Service Corps"}
+        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
+        fromDate={"2019"}
+        toDate={"2020"}
       />
       <ResumeHeading
-        heading={"Formation Développeur Web Full Stack"}
-        subHeading={
-          "Formation en présentiel // Apprentissage des bases du HTML/CSS, JS, PHP et Laravel //  Programmation Orientée Objet // Utilisation d'API"
-        }
-        fromDate={"03/2022"}
-        toDate={"07/2023"}
+        heading={"High School "}
+        subHeading={"Command Secondary School Mbiri"}
+        fromDate={"2007"}
+        toDate={"2012"}
       />
-      <ResumeHeading
-        heading={"Master en Design Urbain"}
-        subHeading={"Université d’Aix-Marseille // Mention Bien"}
-        fromDate={"2011"}
-        toDate={"2013"}
-      />
-      <div className="resume-screen-container" key="work-experience">
+    </div>,
+
+    /* WORK EXPERIENCE */
+    <div className="resume-screen-container" key="work-experience">
+      <div className="experience-container">
         <ResumeHeading
-          heading={"Santé Formapro"}
-          subHeading={"Alternance Développeur Web Full Stack"}
-          fromDate={"2022"}
-          toDate={"présent"}
+          heading={"Ehizeex Technoloy"}
+          subHeading={"FULL STACK DEVELOPER INTERN"}
+          fromDate={"2021"}
+          toDate={"Present"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Présentement alternant développeur web et spécialiste SEO
+            Currently working as MERN stack web and mobile developer and also an
+            online instructor on udemy.
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Construction de sites Wordpress
+            - Developed an ecommerce website for client with the dashboard for
+            managing the products, managing reviews, users, payment etc. .
           </span>
           <br />
-          <span className="resume-description-text">- Audit SEO</span>
+          <span className="resume-description-text">
+            - Integrated the web app with backend services to create new user
+            onboarding application with dynamic form content.{" "}
+          </span>
           <br />
-          <span className="resume-description-text">- Exemple à remplir</span>
-        </div>
-        ,
-        <div
-          className="resume-screen-container programming-skills-container"
-          key="programming-skills"
-        >
-          {programmingSkillsDetails.map((skill, index) => (
-            <div className="skill-parent" key={index}>
-              <div className="heading-bullet"></div>
-              <span>{skill.skill}</span>
-              <div className="skill-percentage">
-                <div
-                  style={{ width: skill.ratingPercentage + "%" }}
-                  className="active-percentage"
-                ></div>
-              </div>
-            </div>
-          ))}
-        </div>
-        ,
-        <div className="resume-screen-container" key="projects">
-          {projectsDetails.map((projectsDetail, index) => (
-            <ResumeHeading
-              key={index}
-              heading={projectsDetail.title}
-              description={projectsDetail.description}
-              skills={projectsDetail.skills}
-            />
-          ))}
+          <span className="resume-description-text">
+            - I stretch my mental capacity to develope UI as per the given
+            designs.
+          </span>
+          <br />
         </div>
       </div>
+    </div>,
+
+    /* PROGRAMMING SKILLS */
+    <div
+      className="resume-screen-container programming-skills-container"
+      key="programming-skills"
+    >
+      {programmingSkillsDetails.map((skill, index) => (
+        <div className="skill-parent" key={index}>
+          <div className="heading-bullet"></div>
+          <span>{skill.skill}</span>
+          <div className="skill-percentage">
+            <div
+              style={{ width: skill.ratingPercentage + "%" }}
+              className="active-percentage-bar"
+            ></div>
+          </div>
+        </div>
+      ))}
+    </div>,
+
+    /* PROJECTS */
+    <div className="resume-screen-container" key="projects">
+      {projectsDetails.map((projectsDetails, index) => (
+        <ResumeHeading
+          key={index}
+          heading={projectsDetails.title}
+          subHeading={projectsDetails.subHeading}
+          description={projectsDetails.description}
+          fromDate={projectsDetails.duration.fromDate}
+          toDate={projectsDetails.duration.toDate}
+        />
+      ))}
+    </div>,
+
+    /* Interests */
+    <div className="resume-screen-container" key="interests">
+      <ResumeHeading
+        heading="Teaching"
+        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+      />
+      <ResumeHeading
+        heading="Music"
+        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
+      />
+      <ResumeHeading
+        heading="Competitive Gaming"
+        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
+      />
     </div>,
   ];
 
@@ -169,11 +205,11 @@ function Resume() {
         <img
           className="bullet-logo"
           src={require(`../../assets/Resume/${bullet.logoSrc}`)}
-          alt="B"
+          alt="logo"
         />
         <span className="bullet-label">{bullet.label}</span>
       </div>
-    ));
+    ))
   };
 
   const getResumeScreen = () => {
@@ -188,20 +224,23 @@ function Resume() {
   };
 
   return (
-    <div className="resume-container">
-      <div className="resume-content">
-        <Heading title={"Expériences"} />
-        <div className="resume-card">
-          <div className="resume-bullets">
-            <div className="bullet-container">
-              <div className="bullet-icons"></div>
-              <div className="bullet">{getBullets()}</div>
+    <>
+      <Heading title={"Expériences"} />
+      <div className="resume-container screen-container">
+        <div className="resume-content">
+          <div className="resume-card">
+            <div className="resume-bullets">
+              <div className="bullet-container">
+              
+                <div className="bullet-icons"></div>
+                <div className="bullet">{getBullets()}</div>
+              </div>
             </div>
+            <div className="resume-bullet-details">{getResumeScreen()}</div>
           </div>
-          <div className="resume-bullet-details">{getResumeScreen()}</div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

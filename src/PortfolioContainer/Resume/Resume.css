@@ -7,75 +7,57 @@
   margin: 120px 0;
 }
 
-.resume-card {
-  display: flex;
-  height: 360px;
-  width: 1000px;
-  /* margin: 80px 0; */
+.resume-card{
+    display: flex;
+    height: 360px;
+    width: 1000px;
 }
 
-.resume-bullets {
-  /* box-shadow: 15px 0 9px -15px #1f2235; */
-  height: 100%;
-  width: 320px;
+.resume-bullets{
+    height: 100%;
+    box-shadow: 15px 0 9px -15px black; 
+    width: 380px;
 }
 
-.resume-bullet-details {
-  flex-grow: 1;
-  width: 600px;
-  overflow: hidden;
-  padding: 0 0 0 80px;
+.resume-bullet-details{
+    flex-grow: 1;
+    width: 600px;
+    overflow: hidden;
+    padding: 0 0 0 70px;
 }
 
-.experience-description {
-  margin: 10px 0 0 0;
-  text-align: justify;
+.experience-description{
+    margin: 70px 0 0 0;
+    text-align: justify;
+    max-width: 100%;
 }
 
-.resume-description-text {
-  font-size: 12px;
+.resume-details-carousal{
+    transition: transform 1s ease-out;
 }
 
-.resume-details-carousal {
-  transition: transform 1s ease-out;
+.bullet-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
-.bullet-container {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
+/* .bullets{
+    width: 80%;
+    position: relative;
+    z-index: 2;
+} */
 
-.bullets {
-  width: 86%;
-  position: relative;
-  z-index: 2;
-}
-
-.bullet-logo {
-  cursor: pointer;
-  background-color: #1f2235;
-  height: 40px;
-  margin: 15px 30px;
-  padding: 0 8px;
-  border-radius: 20px;
-  width: 40px;
-  transition: width 0.6s ease;
-}
-
-.bullet-label {
-  font-size: 14px;
-  white-space: nowrap;
-  font-family: "Poppins";
-  font-weight: bold;
-}
-
-.bullet-icons {
-  width: 34px;
-  height: 100%;
-  z-index: 1;
-  background-color: #1f2235;
-  position: absolute;
+.bullet{
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    height: 40px;
+    margin: 15px 0;
+    padding: 0 8px;
+    border-radius: 20px;
+    width: 30px;
+    transition: width 0.6 ease;
 }
