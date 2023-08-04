@@ -40,62 +40,61 @@ function Resume() {
   ];
 
   const programmingSkillsDetails = [
+    { skill: "HTML", ratingPercentage: 85 },
+    { skill: "CSS", ratingPercentage: 85 },
     { skill: "Javascript", ratingPercentage: 80 },
     { skill: "React JS", ratingPercentage: 60 },
     { skill: "Node JS", ratingPercentage: 60 },
-    { skill: "Mongo DB", ratingPercentage: 60 },
-    { skill: "HTML", ratingPercentage: 85 },
     { skill: "Express JS", ratingPercentage: 85 },
-    { skill: "Test 1", ratingPercentage: 85 },
-    { skill: "Test 2", ratingPercentage: 85 },
-    { skill: "Test 3", ratingPercentage: 85 },
+    { skill: "Mongo DB", ratingPercentage: 60 },
+    { skill: "PHP", ratingPercentage: 60 },
   ];
 
   const projectsDetails = [
     {
-      title: "Personal Portfolio Website",
+      title: "Créez la page d'accueil d'une agence de voyage",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+        "Intégrer la maquette du site en HTML et CSS // Respecter le visuel fourni // Rendre l’interface parfaitement responsive pour smartphone et tablette",
+      subHeading: "#html #css",
     },
     {
-      title: "Mobile E-shop ",
+      title: "Créez une page web dynamique",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "An ecommerce application designed to sell products online wth payment system integration",
+        "Créer la page de présentation des travaux de l'architecte // Ajouter une page de connexion de l'administrateur du site // Afficher une fenêtre modale permettant d’ajouter et de supprimer de nouveaux projets",
       subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "#javascript",
     },
     {
-      title: "Ecommerce Website ",
+      title: "Créez une application web de location immobilière",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+        "Créer les pages et les composants du site // Mettre en place les routes pour connecter ces pages // Ajouter des animations de carroussel et de collapse",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "#react",
     },
   ];
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
+        heading={"Formation “Développeur Web” avec Open Classroom - Alternance"}
+        subHeading={"400 heures de formation sur 12 mois // Formation en distancielle // Principales notions abordées : HTML-CSS, Javascript, React, Node JS, Méthode Agile"}
+        fromDate={"2022"}
+        toDate={"2023"}
       />
 
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
+        heading={"Formation Développeur Web Full Stack"}
+        subHeading={"Formation en présentiel // Apprentissage des bases du HTML/CSS, JS, PHP et Laravel //  Programmation Orientée Objet // Utilisation d'API"}
+        fromDate={"04-"}
+        toDate={"07/22"}
       />
       <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
+        heading={"Master en Design Urbain"}
+        subHeading={"Université d’Aix-Marseille // Mention Bien"}
+        fromDate={"2011"}
+        toDate={"2013"}
       />
     </div>,
 
@@ -103,31 +102,27 @@ function Resume() {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
-          fromDate={"2021"}
-          toDate={"Present"}
+          heading={"Santé Formapro"}
+          subHeading={"Développeur Web Full-Stack"}
+          fromDate={"2022"}
+          toDate={"Présent"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
+            Intégration de cours e-learning.
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
+            - Développement de fonctionnalités en Symphony.
           </span>
           <br />
           <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
+            - Gestion et création de sites Wordpress.{" "}
           </span>
           <br />
           <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
+            - Audit SEO complets.
           </span>
           <br />
         </div>
@@ -141,7 +136,6 @@ function Resume() {
     >
       {programmingSkillsDetails.map((skill, index) => (
         <div className="skill-parent" key={index}>
-          <div className="heading-bullet"></div>
           <span>{skill.skill}</span>
           <div className="skill-percentage">
             <div
@@ -170,16 +164,16 @@ function Resume() {
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+        heading="Écriture"
+        description="Je suis passioné d'écriture sous toutes ses formes."
       />
       <ResumeHeading
-        heading="Music"
-        description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
+        heading="Cinéma"
+        description="Je suis passioné de cinéma."
       />
       <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
+        heading="Voyages"
+        description="J'ai vécu pendant 5 ans à l'étranger, vécu dans 4 pays différents et explorés des dizaines d'autres."
       />
     </div>,
   ];

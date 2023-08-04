@@ -1,6 +1,7 @@
 import Profile from "./PortfolioContainer/Home/Profile"
 import Navbar from "./PortfolioContainer/Navbar/Navbar"
 import AboutMe from "./PortfolioContainer/AboutMe/AboutMe"
+import Resume from "./PortfolioContainer/Resume/Resume"
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <Profile/>
       <AboutMe/>
+      <Resume/>
     </div>
   );
 }
