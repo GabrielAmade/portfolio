@@ -8,6 +8,7 @@ import CV_GABRIEL_AMADE from "../../assets/AboutMe/CV_GABRIEL_AMADE.pdf";
 function AboutMe(props) {
   return (
       <>
+      <div id='aboutme'></div>
       <Heading title={'À Propos'} />
       <div className='about-me-container screen-container'>
       <div className='about-me-parent'>

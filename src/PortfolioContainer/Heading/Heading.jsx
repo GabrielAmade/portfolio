@@ -8,7 +8,6 @@ function Heading(props) {
         <div className='heading-container'>
             <div className='screen-heading'>
                 <span>{props.title}</span>
-                {/* <span>À Propos</span> */}
             </div>
         </div>
         <div className='heading-separator'>
