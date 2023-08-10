@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import Heading from "../Heading/Heading";
 import "./Resume.css"
+import madeonImage from "../../assets/AboutMe/madeon.jpg";
+import testImage from "../../assets/AboutMe/test.jpg";
+
 
 
 function Resume() {
@@ -52,29 +55,47 @@ function Resume() {
 
   const projectsDetails = [
     {
-      title: "Créez la page d'accueil d'une agence de voyage",
+      title: (
+        <a href="https://github.com/GabrielAmade/bookie" target="_blank" rel="noopener noreferrer">
+          Créez la page d'accueil d'une agence de voyage
+        </a>
+      ),
       duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Intégrer la maquette du site en HTML et CSS // Respecter le visuel fourni // Rendre l’interface parfaitement responsive pour smartphone et tablette",
-      subHeading: "#html #css",
+      description: (
+        <div className="project-description">
+      Intégrer la maquette du site en HTML et CSS // Respecter le visuel fourni // Rendre l’interface parfaitement responsive pour smartphone et tablette
+      </div>
+      ),
     },
     {
-      title: "Créez une page web dynamique",
+      title: (
+        <a href="https://github.com/GabrielAmade/Portfolio-architecte-sophie-bluel-master" target="_blank" rel="noopener noreferrer">
+          Créez une page web dynamique
+        </a>
+      ),
       duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Créer la page de présentation des travaux de l'architecte // Ajouter une page de connexion de l'administrateur du site // Afficher une fenêtre modale permettant d’ajouter et de supprimer de nouveaux projets",
-      subHeading:
-        "#javascript",
+      
+
+        description: (
+          <div className="project-description">
+        Créer la page de présentation des travaux d'une architecte // Ajouter une page de connexion de l'administrateur du site // Afficher une fenêtre modale permettant d’ajouter et de supprimer de nouveaux projets
+        </div>
+        ),
     },
+
+
     {
-      title: "Créez une application web de location immobilière",
+      title: (
+        <a href="https://github.com/GabrielAmade/kasa" target="_blank" rel="noopener noreferrer">
+          Créez une application web de location immobilière
+        </a>
+      ),
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "Créer les pages et les composants du site // Mettre en place les routes pour connecter ces pages // Ajouter des animations de carroussel et de collapse",
-      subHeading:
-        "#react",
+        "Créer les pages et les composants du site // Mettre en place les routes pour connecter ces pages // Ajouter des animations de carrousel et de collapse",
     },
-  ];
+];
+
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
@@ -83,6 +104,7 @@ function Resume() {
         fromDate={"2022"}
         toDate={"2023"}
       />
+
 
       <ResumeHeading
         heading={"Formation Développeur Web Full Stack"}
@@ -102,17 +124,16 @@ function Resume() {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Santé Formapro"}
+          heading={"Santé Formapro - "}
           subHeading={"Développeur Web Full-Stack"}
           fromDate={"2022"}
           toDate={"Présent"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Intégration de cours e-learning.
+            - Intégration de cours e-learning.
           </span>
-        </div>
-        <div className="experience-description">
+          <br />
           <span className="resume-description-text">
             - Développement de fonctionnalités en Symphony.
           </span>
@@ -219,6 +240,7 @@ function Resume() {
 
   return (
     <>
+      <div id='experiences'></div>
       <Heading title={"Expériences"} />
       <div className="resume-container screen-container">
         <div className="resume-content">
