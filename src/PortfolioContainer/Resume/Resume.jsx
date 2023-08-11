@@ -152,25 +152,25 @@ function Resume() {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Santé Formapro - "}
-          subHeading={"Développeur Web Full-Stack"}
+          heading={"Santé Formapro // Développeur Web Full-Stack"}
+          subHeading={"Contrat en alternance d'un an"}
           fromDate={"2022"}
           toDate={"Présent"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Intégration de cours e-learning.
+            - Intégration de cours e-learning
           </span>
           <br />
           <span className="resume-description-text">
-            - Développement de fonctionnalités en Symphony.
+            - Création de nouvelles fonctionnalités en Symphony sur l'ERP
           </span>
           <br />
           <span className="resume-description-text">
-            - Gestion et création de sites Wordpress.{" "}
+            - Gestion et création de sites Wordpress{" "}
           </span>
           <br />
-          <span className="resume-description-text">- Audit SEO complets.</span>
+          <span className="resume-description-text">- Réalisation d'audits et optimisation SEO des sites du groupe SFP Expansion </span>
           <br />
         </div>
       </div>
@@ -212,15 +212,15 @@ function Resume() {
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
         heading="Écriture"
-        description="Je suis passioné d'écriture sous toutes ses formes."
+        description="Ma passion pour les mots m'a guidé vers une expérience passionnante en tant que rédacteur indépendant pendant deux ans sur la plateforme Come up. J'ai eu le plaisir d'écrire des dizaines d'articles sur une variété de sujets, du bien-être au web marketing en passant par la photographie, laissant ainsi ma plume explorer un large éventail d'horizons captivants."
       />
       <ResumeHeading
         heading="Cinéma"
-        description="Je suis passioné de cinéma."
+        description="Je suis captivé par l'art cinématographique et ses histoires en mouvement, trouvant inspiration et évasion dans chaque scène."
       />
       <ResumeHeading
         heading="Voyages"
-        description="J'ai vécu pendant 5 ans à l'étranger, vécu dans 4 pays différents et explorés des dizaines d'autres."
+        description="L'appel de l'aventure m'a conduit à vivre cinq ans à l'étranger, explorant plusieurs pays bien différents (Australie, Nouvelle-Zélande, Bali, les îles Fidji, Thaïlande, Malaysie, Singapour, Écosse, Canada...) et découvrant une multitude de cultures, élargissant ainsi ma vision du monde de manière incroyable."
       />
     </div>,
   ];

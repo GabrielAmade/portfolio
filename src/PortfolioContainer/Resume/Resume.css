@@ -15,11 +15,10 @@
 .resume-card{
     display: flex;
     height: 360px;
-    width: 1000px;
+    width: 1170px;
 }
 .resume-bullets{
     height: 100%;
-    /* box-shadow: 15px 0 9px -15px black;  */
     width: 380px;
 }
 .resume-bullet-details{
@@ -61,7 +60,7 @@
     cursor: pointer;
 }
 .bullet-label{
-    font-size: 14px;
+    font-size: 16px;
     white-space: nowrap;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
@@ -98,9 +97,14 @@
     display: flex;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: bold;
 }
+
+.resume-main-heading a{
+    font-size: 16px;
+}
+
 .heading-bullet{
     position: absolute;
     left: -30px;
@@ -115,7 +119,7 @@
 }
 
 .resume-sub-heading{
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Poppins', sans-serif;
     margin: 10px 0 0 0;
 }
@@ -133,7 +137,7 @@
 }
 .resume-description-text{
     font-family: 'Poppins', sans-serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .project-image {
@@ -225,6 +229,8 @@
 
 }
 @media (max-width: 768px) {
+
+    
 
     .resume-container {
         margin: 100px 0;
