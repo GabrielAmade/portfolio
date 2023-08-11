@@ -1,4 +1,5 @@
 import React from "react";
+import './Testimonial.css';
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -20,9 +21,9 @@ export default function Testimonial(props) {
               items: 1
           },
           768:{
-            items: 1
+            items: 2
         },
-        1000:{
+        1024:{
             items: 3
         },
       }
@@ -46,7 +47,7 @@ export default function Testimonial(props) {
                   </div>
                   <div className="client-info">
                       <img src="img/testimonial/lady.png" alt="lady-png" />
-                      <h5>Daidy Dominic</h5>
+                      <h5>Xavier</h5>
                       <p>CEO Global</p>
                   </div>
                 </div>
@@ -80,7 +81,7 @@ export default function Testimonial(props) {
                   </div>
                   <div className="client-info">
                       <img src="img/testimonial/lady.png" alt="lady-png" />
-                      <h5>Daidy Dominic</h5>
+                      <h5>Florent Didi</h5>
                       <p>CEO Global</p>
                   </div>
                 </div>

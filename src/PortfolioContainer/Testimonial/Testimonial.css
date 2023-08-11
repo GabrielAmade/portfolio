@@ -1,0 +1,82 @@
+:root {
+  --blue: #07498a;
+  --grey: #e8e6e2;
+  --orange: #ff7f50;
+}
+
+.testimonial-section {
+  width: 85%;
+  margin: 100px auto;
+  padding: 100px 20px;
+  background-image: url("../../assets/Testimonial/testimonial-background.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -1;
+}
+
+.testimonial-section .testi-item {
+  background-color: var(--grey);
+  padding: 30px;
+}
+
+.testimonial-section .testi-item p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.testi-item p .fa-quote-left {
+  margin-right: 5px;
+  color: var(--orange);
+}
+
+.testi-item p .fa-quote-right {
+  margin-left: 5px;
+  color: var(--orange);
+}
+
+.testimonial-section .client-info {
+  position: relative;
+  padding-left: 80px;
+  padding-top: 5px;
+  min-height: 60px;
+}
+
+.testimonial-section .client-info img {
+  height: 70px;
+  width: 70px !important;
+  border: 2px solid transparent;
+  border-color: black;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.testimonial-section .client-info h5 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    margin: 0 0 2px;
+    font-family: "Poppins", sans-serif;
+}
+
+.testimonial-section .client-info p{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .testimonial-section {
+        width: 100%;
+        
+      }
+
+}
