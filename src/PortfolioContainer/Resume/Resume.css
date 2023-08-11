@@ -139,9 +139,8 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 0;
+    top: 310px;
     left: 0;
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
 }
 
   .project-description.project-description-1:hover + .project-image-1 {
@@ -156,6 +155,7 @@
     background-image: url("../../assets/Resume/project-js.png"); /* Change to appropriate image URL */
     opacity: 1;
     z-index: 1000;
+    top: 240px;
   }
 
   .project-description.project-description-3:hover + .project-image-3 {
@@ -163,6 +163,8 @@
     background-image: url("../../assets/Resume/project-react.png"); /* Change to appropriate image URL */
     opacity: 1;
     z-index: 1000;
+    top: -35px;
+
   }
   
   
@@ -211,6 +213,10 @@
     .resume-bullet-details{
         padding: 0 0 0 70px;
     }
+
+    .project-description.project-description-3:hover + .project-image-3 {
+        top: 125px;
+      }
 
 
 }
@@ -262,10 +268,30 @@
     .separator-line {
         margin-bottom: 0;
     }
+
+    .project-description.project-description-2:hover + .project-image-2 {
+        top: -230px;
+      }
+
+    .project-description.project-description-3:hover + .project-image-3 {
+        top: 380px;
+      }
    
 }
 @media (max-width: 425px) {
     .selected-bullet{
         width: 100%;
     }
+
+    .project-description.project-description-1:hover + .project-image-1 {
+        top: 20px;
+      }
+
+    .project-description.project-description-2:hover + .project-image-2 {
+        top: -10px;
+      }
+
+    .project-description.project-description-3:hover + .project-image-3 {
+        top: -75px;
+      }
 }
