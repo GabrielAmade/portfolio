@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import Heading from "../Heading/Heading";
 import "./Resume.css"
-import madeonImage from "../../assets/AboutMe/madeon.jpg";
-import testImage from "../../assets/AboutMe/test.jpg";
-
 
 
 function Resume() {
@@ -62,9 +59,12 @@ function Resume() {
       ),
       duration: { fromDate: "2020", toDate: "2021" },
       description: (
-        <div className="project-description">
-      Intégrer la maquette du site en HTML et CSS // Respecter le visuel fourni // Rendre l’interface parfaitement responsive pour smartphone et tablette
+        <div className="project-container">
+      <div className="project-description project-description-1">
+        Intégrer la maquette du site en HTML et CSS // Respecter le visuel fourni // Rendre l’interface parfaitement responsive pour smartphone et tablette
       </div>
+      <div className="project-image"></div> 
+    </div>
       ),
     },
     {
@@ -77,9 +77,12 @@ function Resume() {
       
 
         description: (
-          <div className="project-description">
+          <div className="project-container">
+      <div className="project-description project-description-2">
         Créer la page de présentation des travaux d'une architecte // Ajouter une page de connexion de l'administrateur du site // Afficher une fenêtre modale permettant d’ajouter et de supprimer de nouveaux projets
-        </div>
+      </div>
+      <div className="project-image"></div> 
+    </div>
         ),
     },
 
@@ -91,8 +94,14 @@ function Resume() {
         </a>
       ),
       duration: { fromDate: "2020", toDate: "2021" },
-      description:
-        "Créer les pages et les composants du site // Mettre en place les routes pour connecter ces pages // Ajouter des animations de carrousel et de collapse",
+      description: (
+        <div className="project-container">
+          <div className="project-description project-description-3">
+            Créer les pages et les composants du site // Mettre en place les routes pour connecter ces pages // Ajouter des animations de carrousel et de collapse
+          </div>
+          <div className="project-image"></div> 
+        </div>
+      ),
     },
 ];
 
