@@ -141,9 +141,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
     transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
-  }
+}
 
   .project-description.project-description-1:hover + .project-image-1 {
     display: block; /* Show the image on hover */
@@ -161,7 +160,7 @@
 
   .project-description.project-description-3:hover + .project-image-3 {
     display: block; /* Show the image on hover */
-    background-image: url("../../assets/AboutMe/test-2.jpg"); /* Change to appropriate image URL */
+    background-image: url("../../assets/Resume/project-react.png"); /* Change to appropriate image URL */
     opacity: 1;
     z-index: 1000;
   }
