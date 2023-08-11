@@ -63,7 +63,7 @@ function Resume() {
       <div className="project-description project-description-1">
         Intégrer la maquette du site en HTML et CSS // Respecter le visuel fourni // Rendre l’interface parfaitement responsive pour smartphone et tablette
       </div>
-      <div className="project-image"></div> 
+      <div className="project-image project-image-1"></div> 
     </div>
       ),
     },
@@ -81,7 +81,7 @@ function Resume() {
       <div className="project-description project-description-2">
         Créer la page de présentation des travaux d'une architecte // Ajouter une page de connexion de l'administrateur du site // Afficher une fenêtre modale permettant d’ajouter et de supprimer de nouveaux projets
       </div>
-      <div className="project-image"></div> 
+      <div className="project-image project-image-2"></div> 
     </div>
         ),
     },
@@ -99,7 +99,7 @@ function Resume() {
           <div className="project-description project-description-3">
             Créer les pages et les composants du site // Mettre en place les routes pour connecter ces pages // Ajouter des animations de carrousel et de collapse
           </div>
-          <div className="project-image"></div> 
+          <div className="project-image project-image-3"></div> 
         </div>
       ),
     },
