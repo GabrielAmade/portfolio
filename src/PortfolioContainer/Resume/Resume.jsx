@@ -163,7 +163,7 @@ function Resume() {
           </span>
           <br />
           <span className="resume-description-text">
-            - Création de nouvelles fonctionnalités en Symphony sur l'ERP
+            - Création de nouvelles fonctionnalités en PHP pour la plateforme
           </span>
           <br />
           <span className="resume-description-text">
