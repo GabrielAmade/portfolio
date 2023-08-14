@@ -3,6 +3,7 @@ import Navbar from "./PortfolioContainer/Navbar/Navbar"
 import AboutMe from "./PortfolioContainer/AboutMe/AboutMe"
 import Resume from "./PortfolioContainer/Resume/Resume"
 import Testimonial from "./PortfolioContainer/Testimonial/Testimonial"
+import ContactMe from "./PortfolioContainer/ContactMe/ContactMe"
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <AboutMe/>
       <Resume/>
       <Testimonial/>
+      <ContactMe/>
     </div>
   );
 }
