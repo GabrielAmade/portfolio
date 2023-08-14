@@ -22,9 +22,27 @@ function ContactMe() {
 
     console.log(name, email, message);
 
+    const submitForm = (e)=>{
+        e.preventDefault();
+        try{
+            let data ={
+                name,
+                email,
+                message
+            }
+            setBool(true)
+            const res = axios.post(`/contact, data`)
+
+        } catch(error){
+            console.log(error);
+        }
+        
+    }
+
 
   return (
-    <div className="main-container">
+      
+    <div className="main-container" id="contact">
         <Heading title={"Contact"} />
         <div className='central-form'>
             <div className='col-1'>
@@ -37,7 +55,7 @@ function ContactMe() {
             </div>
             <div className='col-2'>
                 <div className='form'>
-                    <form>
+                    <form onSubmit={submitForm}>
                         <label htmlFor='name'>Nom (obligatoire)</label>
                         <input type="text" 
                             onChange={handleName}
@@ -62,6 +80,7 @@ function ContactMe() {
         </div>
 
     </div>
+    
   )
 }
 
