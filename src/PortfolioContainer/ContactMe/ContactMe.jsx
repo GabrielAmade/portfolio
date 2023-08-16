@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import Heading from "../Heading/Heading";
 import "./ContactMe.css"
-
+import axios from "axios"
+import {toast} from "react-toastify"
 
 function ContactMe() {
 
@@ -9,6 +10,7 @@ function ContactMe() {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [bool, setBool] = useState(false);
+    const [banner, setBanner] = useState("");
 
     const handleName = (e)=>{
         setName(e.target.value);
@@ -22,7 +24,7 @@ function ContactMe() {
 
     console.log(name, email, message);
 
-    const submitForm = (e)=>{
+    const submitForm = async(e)=>{
         e.preventDefault();
         try{
             let data ={
@@ -31,7 +33,16 @@ function ContactMe() {
                 message
             }
             setBool(true)
-            const res = axios.post(`/contact, data`)
+            const res = await axios.post(`/contact, data`);
+            if(name.length === 0 || email.length === 0 || message.length === 0){
+                setBanner(res.data.msg)
+                toast.error(res.data.msg)
+                setBool (false)
+            } else if (res.status === 200){
+                setBanner(res.data.msg)
+                toast.success(res.data.msg)
+                setBool (false)
+            }
 
         } catch(error){
             console.log(error);
@@ -74,6 +85,7 @@ function ContactMe() {
                         <div className='send-btn'>
                             <button type='submit'>Envoyer</button>
                         </div>
+                        <p>{banner}</p>
                     </form>
                 </div>
             </div>
