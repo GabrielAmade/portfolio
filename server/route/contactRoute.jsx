@@ -13,10 +13,10 @@ router.post('/contact', (req, res)=>{
             auth:{
                 user: 'gabriel.amade84@gmail.com',
                 pass:'Management1912!'
-            }
-        })
+            },
+        });
         let mailOptions = {
-            from:DataTransfer.email,
+            from:data.email,
             to:'gabriel.amade84@gmail.com',
             subject:`message from ${data.name}`,
             html:`
@@ -38,9 +38,9 @@ router.post('/contact', (req, res)=>{
             } catch (error){
                 if(error)return res.status(500).json({msg: "Erreur du server"})
             }
-        })
+        });
     
 
-})
+});
 
 module.exports=router
