@@ -2,15 +2,16 @@ import React, {useState} from 'react'
 import Heading from "../Heading/Heading";
 import "./ContactMe.css"
 import axios from "axios"
-import {toast} from "react-toastify"
+import load1 from "../../../src/assets/ContactMe/load2.gif";
 
-function ContactMe() {
+
+function ContactMe(props) {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-    const [bool, setBool] = useState(false);
     const [banner, setBanner] = useState("");
+    const [bool, setBool] = useState(false);
 
     const handleName = (e)=>{
         setName(e.target.value);
@@ -22,8 +23,6 @@ function ContactMe() {
         setMessage(e.target.value);
     }
 
-    console.log(name, email, message);
-
     const submitForm = async(e)=>{
         e.preventDefault();
         try{
@@ -32,15 +31,24 @@ function ContactMe() {
                 email,
                 message
             }
-            setBool(true)
-            const res = await axios.post(`/contact, data`);
+
             if(name.length === 0 || email.length === 0 || message.length === 0){
-                setBanner(res.data.msg)
-                toast.error(res.data.msg)
+                setBanner("Please fill out all of the fields.")
                 setBool (false)
-            } else if (res.status === 200){
+                return
+            }
+
+            setBool(true)
+            const res = await axios.post(`/contact`, data);
+            if(res.status === 200){
                 setBanner(res.data.msg)
-                toast.success(res.data.msg)
+                setBool (false)
+
+                setName("")
+                setEmail("")
+                setMessage("")
+            } else {
+                setBanner(res.data.msg)
                 setBool (false)
             }
 
@@ -67,23 +75,33 @@ function ContactMe() {
             <div className='col-2'>
                 <div className='form'>
                     <form onSubmit={submitForm}>
-                        <label htmlFor='name'>Nom (obligatoire)</label>
+                        <label htmlFor='name'>Nom</label>
                         <input type="text" 
                             onChange={handleName}
                             value={name}
                         />
-                        <label htmlFor='email'>Email (obligatoire)</label>
+                        <label htmlFor='email'>Email</label>
                         <input type="email" 
                             onChange={handleEmail}
                             value={email}
                         />
-                        <label htmlFor='message'>Message (obligatoire)</label>
+                        <label htmlFor='message'>Message</label>
                         <textarea type="text" 
                             onChange={handleMessage}
                             value={message}
                         />
                         <div className='send-btn'>
-                            <button type='submit'>Envoyer</button>
+                            <button type="submit">
+                            Envoyer
+                            <i className="fa fa-paper-plane" />
+                            {bool ? (
+                            <b className="load">
+                            <img src={load1} alt="image not responding" />
+                            </b>
+                ) : (
+                  ""
+                )}
+              </button>
                         </div>
                         <p>{banner}</p>
                     </form>
