@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import Heading from "../Heading/Heading";
 import "./ContactMe.css"
 import axios from "axios"
-import load1 from "../../../src/assets/ContactMe/load2.gif";
 
 
 function ContactMe(props) {
@@ -11,7 +10,6 @@ function ContactMe(props) {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [banner, setBanner] = useState("");
-    const [bool, setBool] = useState(false);
 
     const handleName = (e)=>{
         setName(e.target.value);
@@ -33,23 +31,19 @@ function ContactMe(props) {
             }
 
             if(name.length === 0 || email.length === 0 || message.length === 0){
-                setBanner("Please fill out all of the fields.")
-                setBool (false)
+                setBanner("Merci de remplir tous les champs du formulaire.")
                 return
             }
 
-            setBool(true)
             const res = await axios.post(`/contact`, data);
             if(res.status === 200){
                 setBanner(res.data.msg)
-                setBool (false)
 
                 setName("")
                 setEmail("")
                 setMessage("")
             } else {
                 setBanner(res.data.msg)
-                setBool (false)
             }
 
         } catch(error){
@@ -93,14 +87,7 @@ function ContactMe(props) {
                         <div className='send-btn'>
                             <button type="submit">
                             Envoyer
-                            <i className="fa fa-paper-plane" />
-                            {bool ? (
-                            <b className="load">
-                            <img src={load1} alt="image not responding" />
-                            </b>
-                ) : (
-                  ""
-                )}
+                            
               </button>
                         </div>
                         <p>{banner}</p>
