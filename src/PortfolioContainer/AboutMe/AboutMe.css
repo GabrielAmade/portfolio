@@ -7,7 +7,7 @@
   .about-me-container {
     display: flex;
     justify-content: flex-end;
-    height: 100vh;
+    margin-bottom: 100px;
   }
 
   .about-me-parent {
