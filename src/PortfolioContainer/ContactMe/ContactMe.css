@@ -27,7 +27,6 @@
     align-items: center;
     background-color: var(--orange);
     padding: 10px 20px;
-
 }
 
 .contact-infos h2{
@@ -129,3 +128,12 @@ form {
   }
 
 
+  @media (max-width: 425px) {
+
+    .contact-infos{
+      flex-wrap: wrap;
+  }
+      }
+
+
+  

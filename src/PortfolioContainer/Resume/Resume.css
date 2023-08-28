@@ -125,7 +125,7 @@
 }
 .resume-heading-description{
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
 }
 .heading-date{
@@ -306,4 +306,12 @@
     .project-description.project-description-3:hover + .project-image-3 {
         top: -75px;
       }
+
+    .resume-main-heading a{
+        font-size: 14px;
+    }
+
+    .resume-heading-description{
+        font-size: 12px;
+    }
 }

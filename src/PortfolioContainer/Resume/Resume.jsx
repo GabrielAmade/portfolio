@@ -212,7 +212,7 @@ function Resume() {
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
         heading="Écriture"
-        description="Ma passion pour les mots m'a guidé vers une expérience passionnante en tant que rédacteur indépendant pendant deux ans sur la plateforme Come up. J'ai eu le plaisir d'écrire des dizaines d'articles sur une variété de sujets, du bien-être au web marketing en passant par la photographie, laissant ainsi ma plume explorer un large éventail d'horizons captivants."
+        description="Ma passion pour les mots m'a guidé vers une expérience passionnante en tant que rédacteur indépendant pendant deux ans sur la plateforme Come up. J'ai eu le plaisir d'écrire des dizaines d'articles sur une variété de sujets, du bien-être au web marketing en passant par la photographie."
       />
       <ResumeHeading
         heading="Cinéma"
@@ -220,7 +220,7 @@ function Resume() {
       />
       <ResumeHeading
         heading="Voyages"
-        description="L'appel de l'aventure m'a conduit à vivre cinq ans à l'étranger, explorant plusieurs pays bien différents (Australie, Nouvelle-Zélande, Bali, les îles Fidji, Thaïlande, Malaysie, Singapour, Écosse, Canada...) et découvrant une multitude de cultures, élargissant ainsi ma vision du monde de manière incroyable."
+        description="L'appel de l'aventure m'a conduit à vivre cinq ans à l'étranger, explorant plusieurs pays bien différents (Australie, Nouvelle-Zélande, Bali, les îles Fidji, Thaïlande, Malaysie, Singapour, Écosse, Canada...) et découvrant une multitude de cultures."
       />
     </div>,
   ];
