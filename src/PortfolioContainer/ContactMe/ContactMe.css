@@ -4,6 +4,10 @@
     --orange: #FF7F50;
   }
 
+#contact{
+  padding-top: 55px;
+}
+
 /* Ajout de styles pour les colonnes */
 .main-container{
     height: 100vh;

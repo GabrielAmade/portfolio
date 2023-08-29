@@ -3,13 +3,19 @@
     --grey: #E8E6E2;
     --orange: #FF7F50;
   }
+
+#experiences{
+    padding-top: 55px;
+}
+
+
 .resume-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
   min-height: fit-content;
-  margin: 120px 0;
+  margin: 30px 0 110px;
   position: relative;
 }
 .resume-card{
@@ -225,6 +231,11 @@
     .project-description.project-description-3:hover + .project-image-3 {
         top: 125px;
       }
+    
+    .resume-main-heading a{
+        font-size: 15px;
+    }
+
 
     
 
@@ -242,6 +253,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
     .bullets{
         width: 90%;
@@ -250,7 +262,7 @@
         height: fit-content;
         display: flex;
         flex-direction: column;
-        margin: 30px 0;
+        margin: 0;
         align-items: center;
         width: 90%;
     }
@@ -268,7 +280,7 @@
     }
 
     .heading-container {
-        padding: 100px 0 0 10px;
+        padding: 5px 0 0 10px;
         margin-block: 50px;
     }
 
