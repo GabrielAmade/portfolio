@@ -90,7 +90,7 @@ function ContactMe(props) {
                             
               </button>
                         </div>
-                        <p>{banner}</p>
+                        <p className='banner'>{banner}</p>
                     </form>
                 </div>
             </div>

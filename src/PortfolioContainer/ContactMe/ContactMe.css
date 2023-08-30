@@ -98,6 +98,14 @@ form {
   button:hover {
     background-color: var(--orange);
   }
+
+  .banner{
+    font-family: 'Poppins', sans-serif;
+    color: var(--orange);
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
   
 
 
