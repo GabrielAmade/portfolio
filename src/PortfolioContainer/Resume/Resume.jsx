@@ -1,10 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Heading from "../Heading/Heading";
 import "./Resume.css";
+import data_fr from "../../datas_fr.json";
+import data_en from "../../datas_en.json";
+import data_it from "../../datas_it.json";
+
+
 
 function Resume() {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffSetStyle, setCarousalOffSetStyle] = useState({});
+  const [language, setLanguage] = useState("en"); // Default to English
+
+  useEffect(() => {
+    const detectedLanguage = navigator.language.split("-")[0];
+    if (detectedLanguage === "fr" || detectedLanguage === "en" || detectedLanguage === "it") {
+      setLanguage(detectedLanguage);
+    } else {
+      setLanguage("en"); // Default to English if not supported
+    }
+  }, []);
+
+  const data = language === "en" ? data_en : language === "it" ? data_it : data_fr;
+
 
   const ResumeHeading = (props) => {
     return (
@@ -39,14 +57,14 @@ function Resume() {
   ];
 
   const programmingSkillsDetails = [
-    { skill: "HTML", ratingPercentage: 85 },
-    { skill: "CSS", ratingPercentage: 85 },
-    { skill: "Javascript", ratingPercentage: 80 },
-    { skill: "React JS", ratingPercentage: 60 },
+    { skill: "HTML", ratingPercentage: 90 },
+    { skill: "CSS", ratingPercentage: 90 },
+    { skill: "Javascript", ratingPercentage: 85 },
+    { skill: "React JS", ratingPercentage: 65 },
     { skill: "Node JS", ratingPercentage: 60 },
-    { skill: "Express JS", ratingPercentage: 85 },
+    { skill: "Express JS", ratingPercentage: 60 },
     { skill: "Mongo DB", ratingPercentage: 60 },
-    { skill: "PHP", ratingPercentage: 60 },
+    { skill: "PHP", ratingPercentage: 50 },
   ];
 
   const projectsDetails = [
@@ -124,12 +142,10 @@ function Resume() {
   const resumeDetails = [
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"Formation “Développeur Web” avec Open Classroom - Alternance"}
-        subHeading={
-          "400 heures de formation sur 12 mois // Formation en distancielle // Principales notions abordées : HTML-CSS, Javascript, React, Node JS, Méthode Agile"
-        }
-        fromDate={"2022"}
-        toDate={"2023"}
+        heading={data.studies_name_1}
+        subHeading={data.studies_details_1}
+        fromDate={data.studies_year_from_1}
+        toDate={data.studies_year_to_1}
       />
 
       <ResumeHeading
@@ -220,7 +236,7 @@ function Resume() {
       />
       <ResumeHeading
         heading="Voyages"
-        description="L'appel de l'aventure m'a conduit à vivre cinq ans à l'étranger, explorant plusieurs pays bien différents (Australie, Nouvelle-Zélande, Bali, les îles Fidji, Thaïlande, Malaysie, Singapour, Écosse, Canada...) et découvrant une multitude de cultures."
+        description="L'appel de l'aventure m'a conduit à vivre cinq ans à l'étranger, explorant plusieurs pays très différents (Australie, Nouvelle-Zélande, Bali, les îles Fidji, Thaïlande, Malaysie, Singapour, Écosse, Canada...) et découvrant une multitude de cultures."
       />
     </div>,
   ];

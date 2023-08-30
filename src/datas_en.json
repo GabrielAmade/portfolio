@@ -1,4 +1,31 @@
 {
+
+    "navbar_about_me": "About",
+    "navbar_experiences": "Experiences",
+    "navbar_contact": "Contact",
+
     "greeting": "Hello,",
-    "tagline": "I am Gabriel, a full-stack web developer and passionate about SEO"
+    "tagline": "I am Gabriel, a full-stack web developer and passionate about SEO",
+
+    "about_me": "About",
+    "description_title_1": "Web Creator, ",
+    "description_title_2": "Code Enthusiast",
+    "description": "I am a Junior Web Developer addicted to code in all its forms. Recently graduated from a one-year apprenticeship program, I am now looking for a position.\n\nI am also an SEO web writer. I have written hundreds of articles for nearly 2 years on the ComeUp platform.\n\nHaving had the opportunity to live abroad for several years, I am bilingual in English (and I love peanut butter and jelly sandwiches).",
+
+    "general_skills": [
+        "Good experience with React and Express frameworks",
+        "Dedicated to providing a pleasant and smooth user experience",
+        "Always keeping an eye on new technologies and the latest advancements"
+    ],
+
+      
+
+    "studies_name_1": "Web Developer Program with OpenClassroom - Apprenticeship",
+    "studies_year_from_1": "2022",
+    "studies_year_to_1": "2023",
+    "studies_details_1": "400 hours of training over 12 months // Remote learning // Key topics covered: HTML-CSS, Javascript, React, Node JS, Agile Methodology"
+
+    
 }
+
+
