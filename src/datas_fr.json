@@ -3,6 +3,8 @@
     "navbar_experiences": "Expériences",
     "navbar_contact": "Contact",
 
+
+
     "greeting": "Hello,",
     "tagline": "Je suis Gabriel, développeur web full-stack et passionné de SEO",
 
@@ -17,50 +19,63 @@
       "Toujours à l’affut des nouvelles technologies et des dernières avancées"
     ],
 
+
+
+
+    "experiences": "Expériences",
+
+    "bullet_name_1": "Diplômes",
+    "bullet_name_2": "Expériences professionnelles",
+    "bullet_name_3": "Technos",
+    "bullet_name_4": "Projets",
+    "bullet_name_5": "Intêrets",
+
     "studies_name_1": "Formation “Développeur Web” avec Open Classroom en Alternance",
     "studies_year_from_1": "2022",
     "studies_year_to_1": "2023",
     "studies_details_1": "400 heures de formation sur 12 mois // Formation en distancielle // Principales notions abordées : HTML-CSS, Javascript, React, Node JS, Méthode Agile",
 
+    "studies_name_2": "Formation Développeur Web Full Stack",
+    "studies_year_from_2": "04",
+    "studies_year_to_2": "07/2022",
+    "studies_details_2": "Formation en présentiel // Apprentissage des bases du HTML/CSS, JS, PHP et Laravel //  Programmation Orientée Objet // Utilisation d'API",
+
+    "studies_name_3": "Master en Design Urbain",
+    "studies_year_from_3": "2011",
+    "studies_year_to_3": "2013",
+    "studies_details_3": "Université d’Aix-Marseille // Mention Bien",
+
+    "work_experience_heading": "Santé Formapro // Développeur Web Full-Stack",
+    "work_experience_subheading": "Contrat en alternance d'un an",
+    "work_experience_list_1": "- Intégration de cours e-learning",
+    "work_experience_list_2": "- Création de nouvelles fonctionnalités en PHP pour la plateforme",
+    "work_experience_list_3": "- Gestion et création de sites Wordpress",
+    "work_experience_list_4": "- Réalisation d'audits et optimisation SEO des sites du groupe SFP Expansion",
 
 
-    "studies": [
-      {
-        "name1": "Formation “Développeur Web” avec Open Classroom en Alternance",
-        "years": "2022 - 2023",
-        "details": "400 heures de formation sur 12 mois // Formation en distancielle // Principales notions abordées : HTML-CSS, Javascript, React, Node JS, Méthode Agile"
-      },
-      {
-        "name": "Formation Développeur Web Full Stack",
-        "years": "04 - 07/2022",
-        "details": "Formation en présentiel // Apprentissage des bases du HTML/CSS, JS, PHP et Laravel //  Programmation Orientée Objet // Utilisation d'API"
-      },
-      {
-        "name": "Master en Design Urbain",
-        "years": "2011- 2013",
-        "details": "Université d’Aix-Marseille // Mention Bien"
-      }
-    ],
+    "project_name_1": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
+    "project_details_1": "Intégrer la maquette du site en HTML et CSS // Respecter le visuel fourni // Rendre l’interface parfaitement responsive pour smartphone et tablette",
+  
+    "project_name_2": "Créez une page web dynamique avec JavaScript",
+    "project_details_2": "Créer la page de présentation des travaux de l'architecte // Ajouter une page de connexion de l'administrateur du site // Afficher une fenêtre modale permettant d’ajouter et de supprimer de nouveaux projets",
+  
+    "project_name_3": "Créez une application web de location immobilière avec React",
+    "project_details_3": "Créer les pages et les composants du site // Mettre en place les routes pour connecter ces pages // Ajouter des animations de carroussel et de collapse",
 
 
-    "projects": [
-      {
-        "name": "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
-        "details": "Intégrer la maquette du site en HTML et CSS // Respecter le visuel fourni // Rendre l’interface parfaitement responsive pour smartphone et tablette",
-        "skills" : "#html #css"
-      },
-      {
-        "name": "Créez une page web dynamique avec JavaScript",
-        "details": "Créer la page de présentation des travaux de l'architecte // Ajouter une page de connexion de l'administrateur du site // Afficher une fenêtre modale permettant d’ajouter et de supprimer de nouveaux projets",
-        "skills" : "#javascript"
-      },
-      {
-        "name": "Créez une application web de location immobilière avec React",
-        "details": "Créer les pages et les composants du site // Mettre en place les routes pour connecter ces pages // Ajouter des animations de carroussel et de collapse",
-        "skills" : "#react"
+    "hobby_title_1": "Écriture",
+    "hobby_description_1": "Ma passion pour les mots m'a guidé vers une expérience passionnante en tant que rédacteur indépendant pendant deux ans sur la plateforme Come up. J'ai eu le plaisir d'écrire des dizaines d'articles sur une variété de sujets, du bien-être au web marketing en passant par la photographie.",
 
-      }
-    ],
+    "hobby_title_2": "Cinéma",
+    "hobby_description_2": "Je suis captivé par l'art cinématographique et ses histoires en mouvement, trouvant inspiration et évasion dans chaque scène.",
+
+    "hobby_title_3": "Voyages",
+    "hobby_description_3": "L'appel de l'aventure m'a conduit à vivre cinq ans à l'étranger, explorant plusieurs pays très différents (Australie, Nouvelle-Zélande, Bali, les îles Fidji, Thaïlande, Malaysie, Singapour, Écosse, Canada...) et découvrant une multitude de cultures.",
+
+
+
+
+
 
     
       "testimonials": [

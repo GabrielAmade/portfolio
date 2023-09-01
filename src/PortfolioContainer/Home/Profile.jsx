@@ -5,7 +5,7 @@ import "./Profile.css";
 import profilephoto from "../../assets/Home/profilephoto.jpg";
 import data_fr from "../../datas_fr.json";
 import data_en from "../../datas_en.json";
-import data_it from "../../datas_it.json"; // Importez les données en italien
+import data_it from "../../datas_it.json";
 
 const Profile = () => {
   const [language, setLanguage] = useState("fr");

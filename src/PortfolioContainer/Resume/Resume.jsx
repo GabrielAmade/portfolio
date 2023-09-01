@@ -17,7 +17,7 @@ function Resume() {
     if (detectedLanguage === "fr" || detectedLanguage === "en" || detectedLanguage === "it") {
       setLanguage(detectedLanguage);
     } else {
-      setLanguage("en"); // Default to English if not supported
+      setLanguage("en"); 
     }
   }, []);
 
@@ -49,11 +49,11 @@ function Resume() {
   };
 
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
-    { label: "Expériences professionnelles", logoSrc: "work-history.svg" },
-    { label: "Technos", logoSrc: "programming-skills.svg" },
-    { label: "Projets", logoSrc: "projects.svg" },
-    { label: "Intêrets", logoSrc: "interests.svg" },
+    { label: data.bullet_name_1, logoSrc: "education.svg" },
+    { label: data.bullet_name_2, logoSrc: "work-history.svg" },
+    { label: data.bullet_name_3, logoSrc: "programming-skills.svg" },
+    { label: data.bullet_name_4, logoSrc: "projects.svg" },
+    { label: data.bullet_name_5, logoSrc: "interests.svg" },
   ];
 
   const programmingSkillsDetails = [
@@ -75,16 +75,14 @@ function Resume() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Créez la page d'accueil d'une agence de voyage
+          {data.project_name_1}
         </a>
       ),
       duration: { fromDate: "2020", toDate: "2021" },
       description: (
         <div className="project-container">
           <div className="project-description project-description-1">
-            Intégrer la maquette du site en HTML et CSS // Respecter le visuel
-            fourni // Rendre l’interface parfaitement responsive pour smartphone
-            et tablette
+            {data.project_details_1}
           </div>
           <div className="project-image project-image-1"></div>
         </div>
@@ -97,7 +95,7 @@ function Resume() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Créez une page web dynamique
+          {data.project_name_2}
         </a>
       ),
       duration: { fromDate: "2020", toDate: "2021" },
@@ -105,10 +103,7 @@ function Resume() {
       description: (
         <div className="project-container">
           <div className="project-description project-description-2">
-            Créer la page de présentation des travaux d'une architecte //
-            Ajouter une page de connexion de l'administrateur du site //
-            Afficher une fenêtre modale permettant d’ajouter et de supprimer de
-            nouveaux projets
+            {data.project_details_2}
           </div>
           <div className="project-image project-image-2"></div>
         </div>
@@ -122,16 +117,14 @@ function Resume() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Créez une application web de location immobilière
+          {data.project_name_3}
         </a>
       ),
       duration: { fromDate: "2020", toDate: "2021" },
       description: (
         <div className="project-container">
           <div className="project-description project-description-3">
-            Créer les pages et les composants du site // Mettre en place les
-            routes pour connecter ces pages // Ajouter des animations de
-            carrousel et de collapse
+            {data.project_details_3}
           </div>
           <div className="project-image project-image-3"></div>
         </div>
@@ -149,18 +142,16 @@ function Resume() {
       />
 
       <ResumeHeading
-        heading={"Formation Développeur Web Full Stack"}
-        subHeading={
-          "Formation en présentiel // Apprentissage des bases du HTML/CSS, JS, PHP et Laravel //  Programmation Orientée Objet // Utilisation d'API"
-        }
-        fromDate={"04-"}
-        toDate={"07/22"}
+        heading={data.studies_name_2}
+        subHeading={data.studies_details_2}
+        fromDate={data.studies_year_from_2}
+        toDate={data.studies_year_to_2}
       />
       <ResumeHeading
-        heading={"Master en Design Urbain"}
-        subHeading={"Université d’Aix-Marseille // Mention Bien"}
-        fromDate={"2011"}
-        toDate={"2013"}
+        heading={data.studies_name_3}
+        subHeading={data.studies_details_3}
+        fromDate={data.studies_year_from_3}
+        toDate={data.studies_year_to_3}
       />
     </div>,
 
@@ -168,25 +159,27 @@ function Resume() {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Santé Formapro // Développeur Web Full-Stack"}
-          subHeading={"Contrat en alternance d'un an"}
+          heading={data.work_experience_heading}
+          subHeading={data.work_experience_subheading}
           fromDate={"2022"}
           toDate={"Présent"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            - Intégration de cours e-learning
+            {data.work_experience_list_1}
           </span>
           <br />
           <span className="resume-description-text">
-            - Création de nouvelles fonctionnalités en PHP pour la plateforme
+            {data.work_experience_list_2}
           </span>
           <br />
           <span className="resume-description-text">
-            - Gestion et création de sites Wordpress{" "}
+            {data.work_experience_list_3}
           </span>
           <br />
-          <span className="resume-description-text">- Réalisation d'audits et optimisation SEO des sites du groupe SFP Expansion </span>
+          <span className="resume-description-text">
+            {data.work_experience_list_4}
+          </span>
           <br />
         </div>
       </div>
@@ -227,16 +220,16 @@ function Resume() {
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Écriture"
-        description="Ma passion pour les mots m'a guidé vers une expérience passionnante en tant que rédacteur indépendant pendant deux ans sur la plateforme Come up. J'ai eu le plaisir d'écrire des dizaines d'articles sur une variété de sujets, du bien-être au web marketing en passant par la photographie."
+        heading={data.hobby_title_1}
+        description={data.hobby_description_1}
       />
       <ResumeHeading
-        heading="Cinéma"
-        description="Je suis captivé par l'art cinématographique et ses histoires en mouvement, trouvant inspiration et évasion dans chaque scène."
+        heading={data.hobby_title_2}
+        description={data.hobby_description_2}
       />
       <ResumeHeading
-        heading="Voyages"
-        description="L'appel de l'aventure m'a conduit à vivre cinq ans à l'étranger, explorant plusieurs pays très différents (Australie, Nouvelle-Zélande, Bali, les îles Fidji, Thaïlande, Malaysie, Singapour, Écosse, Canada...) et découvrant une multitude de cultures."
+        heading={data.hobby_title_3}
+        description={data.hobby_description_3}
       />
     </div>,
   ];
@@ -283,7 +276,7 @@ function Resume() {
   return (
     <>
       <div id="experiences"></div>
-      <Heading title={"Expériences"} />
+      <Heading title={data.experiences} />
       <div className="resume-container screen-container">
         <div className="resume-content">
           <div className="resume-card">
