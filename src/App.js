@@ -2,7 +2,7 @@ import Profile from "./PortfolioContainer/Home/Profile"
 import Navbar from "./PortfolioContainer/Navbar/Navbar"
 import AboutMe from "./PortfolioContainer/AboutMe/AboutMe"
 import Resume from "./PortfolioContainer/Resume/Resume"
-import Testimonial from "./PortfolioContainer/Testimonial/Testimonial"
+import TestiCarousel from "./PortfolioContainer/TestiCarousel/TestiCarousel"
 import ContactMe from "./PortfolioContainer/ContactMe/ContactMe"
 
 
@@ -13,7 +13,7 @@ function App() {
       <Profile/>
       <AboutMe/>
       <Resume/>
-      <Testimonial/>
+      <TestiCarousel/>
       <ContactMe/>
     </div>
   );
