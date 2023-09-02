@@ -77,8 +77,24 @@
     "hobby_description_3": "The call of adventure led me to live abroad for five years, exploring several very different countries (Australia, New Zealand, Bali, the Fiji Islands, Thailand, Malaysia, Singapore, Scotland, Canada...) and discovering a multitude of cultures.",
 
 
-    
-    "testimonial_description_1": "Through his approach throughout the courses, workshops, and projects, Gabriel has demonstrated to the entire teaching team a clear desire to do well and a willingness to have a deep understanding of the concepts he puts into practice. This curiosity and determination to acquire solid fundamentals make Gabriel, in my opinion, a very good junior profile."
+    "testimonial_name_1": "Guillaume G.",
+    "testimonial_name_title_1": "Educational Director",
+    "testimonial_description_1": "Through his approach throughout the courses, workshops, and projects, Gabriel has demonstrated to the entire teaching team a clear desire to do well and a willingness to have a deep understanding of the concepts he puts into practice. This curiosity and determination to acquire solid fundamentals make Gabriel, in my opinion, a very good junior profile.",
+
+    "testimonial_name_2": "Philippe L.",
+    "testimonial_name_title_2": "Photographer",
+    "testimonial_description_2": "Gabriel writes very, very well, with a natural writing style and a strong understanding of SEO fundamentals. He does his research on the subject, and the result is an article that is the opposite of the bland content that is often produced by other writers on the platform.",
+
+    "testimonial_name_3": "Adrien C.",
+    "testimonial_name_title_3": "Content creator",
+    "testimonial_description_3": "Since I started working with Gabriel, the engagement on our articles and the number of comments has increased significantly. His texts are perfectly written, interconnected, well-structured, and easy to read. Gabriel is a professional and it makes all the difference. (One of our articles was even picked up by the print media!) Thank you again, Gabriel.",
+
+
+    "contact_name": "Name",
+    "contact_email": "Email",
+    "contact_message": "Message",
+    "contact_send":"Send"
+
 
 
 

@@ -57,26 +57,22 @@ const TestiCarousel = () => {
           </div>
           <div className="client-info">
             <img src="img/testimonial/lady.png" alt="lady-png" />
-            <h5>Guillaume G.</h5>
-            <p>Directeur Pédagogique</p>
+            <h5>{data.testimonial_name_1}</h5>
+            <p>{data.testimonial_name_title_1}</p>
           </div>
         </div>
         <div className="testi-item">
           <div className="testi-comment">
             <p>
               <i className="fa fa-quote-left"></i>
-              Gabriel rédige très très bien, une écriture naturelle et des
-              fondamentaux de rédaction SEO bien intégrés. Il réalise un travail
-              de recherche de fond sur le sujet, et le résultat donne un article
-              à l'opposé d'une production fade qui est souvent délivré par
-              d'autres rédacteurs présent sur la plateforme.
+                {data.testimonial_description_2}
               <i className="fa fa-quote-right"></i>
             </p>
           </div>
           <div className="client-info">
             <img src="img/testimonial/lady.png" alt="lady-png" />
-            <h5>Philippe L.</h5>
-            <p>Photographe</p>
+            <h5>{data.testimonial_name_2}</h5>
+            <p>{data.testimonial_name_title_2}</p>
           </div>
         </div>
 
@@ -84,19 +80,14 @@ const TestiCarousel = () => {
           <div className="testi-comment">
             <p>
               <i className="fa fa-quote-left" />
-              Depuis que je travaille avec Gabriel, l'engagement dans nos
-              articles et le nombre de commentaires a fait un énorme bond en
-              avant. Ses textes sont parfaitement rédigés, interconnectés, bien
-              structurés et faciles à lire. Gabriel est un professionnel et ça
-              change tout. (Un de nos articles a même été repris par la presse
-              papier !) Encore un immense merci Gabriel
+                {data.testimonial_description_3}
               <i className="fa fa-quote-right" />
             </p>
           </div>
           <div className="client-info">
             <img src="img/testimonial/lady.png" alt="lady-png" />
-            <h5>Adrien C.</h5>
-            <p>Créateur de contenus</p>
+            <h5>{data.testimonial_name_3}</h5>
+            <p>{data.testimonial_name_title_3}</p>
           </div>
         </div>
 

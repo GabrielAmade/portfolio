@@ -1,7 +1,10 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Heading from "../Heading/Heading";
 import "./ContactMe.css"
 import axios from "axios"
+import data_fr from "../../datas_fr.json";
+import data_en from "../../datas_en.json";
+import data_it from "../../datas_it.json";
 
 
 function ContactMe(props) {
@@ -10,6 +13,19 @@ function ContactMe(props) {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [banner, setBanner] = useState("");
+    const [language, setLanguage] = useState("en"); // Default to English
+
+  useEffect(() => {
+    const detectedLanguage = navigator.language.split("-")[0];
+    if (detectedLanguage === "fr" || detectedLanguage === "en" || detectedLanguage === "it") {
+      setLanguage(detectedLanguage);
+    } else {
+      setLanguage("en"); 
+    }
+  }, []);
+
+  const data = language === "en" ? data_en : language === "it" ? data_it : data_fr;
+
 
     const handleName = (e)=>{
         setName(e.target.value);
@@ -59,7 +75,6 @@ function ContactMe(props) {
         <Heading title={"Contact"} />
         <div className='central-form'>
             <div className='col-1'>
-                {/* <h1>Contact</h1> */}
                 <div className='contact-infos'>
                     <h2>Linkedin</h2>
                     <h2>GitHub</h2>
@@ -69,24 +84,24 @@ function ContactMe(props) {
             <div className='col-2'>
                 <div className='form'>
                     <form onSubmit={submitForm}>
-                        <label htmlFor='name'>Nom</label>
+                        <label htmlFor='name'>{data.contact_name}</label>
                         <input type="text" 
                             onChange={handleName}
                             value={name}
                         />
-                        <label htmlFor='email'>Email</label>
+                        <label htmlFor='email'>{data.contact_email}</label>
                         <input type="email" 
                             onChange={handleEmail}
                             value={email}
                         />
-                        <label htmlFor='message'>Message</label>
+                        <label htmlFor='message'>{data.contact_message}</label>
                         <textarea type="text" 
                             onChange={handleMessage}
                             value={message}
                         />
                         <div className='send-btn'>
                             <button type="submit">
-                            Envoyer
+                            {data.contact_send}
                             
               </button>
                         </div>
