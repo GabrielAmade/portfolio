@@ -14,17 +14,15 @@
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    
   }
   
   .testi-item {
     background-color: var(--grey);
     padding: 30px;
-    min-height: 450px;
-    max-width: 350px;
-    margin-right: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    max-width: 650px;
+    margin: 0 auto;
+    
   }
   
   .testi-item p {
@@ -75,15 +73,30 @@
       font-size: 16px;
       line-height: 26px;
   }
+
+
+  @media (max-width: 960px) {
+    .testi-item {
+            
+        max-width: 500px;
+        margin: 0 auto;
+      }
+  }
+
   
   
-  @media (max-width: 768px) {
+  @media (max-width: 760px) {
   
   
       .carousel-container {
           width: 100%;
           
         }
+
+        .testi-item {     
+            max-width: 330px;
+            margin: 0 auto;
+          }
   
   }
   

@@ -119,7 +119,7 @@ form {
   }
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     .central-form{
         flex-direction: column;
         margin: 50px 30px;
