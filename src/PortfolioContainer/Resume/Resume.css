@@ -162,6 +162,7 @@
     background-image: url("../../assets/Resume/project-html-css.png"); /* Change to appropriate image URL */
     opacity: 1;
     z-index: 1000;
+    top: 80px;
   }
   
   .project-description.project-description-2:hover + .project-image-2 {
@@ -169,7 +170,7 @@
     background-image: url("../../assets/Resume/project-js.png"); /* Change to appropriate image URL */
     opacity: 1;
     z-index: 1000;
-    top: 240px;
+    top: 130px;
   }
 
   .project-description.project-description-3:hover + .project-image-3 {
@@ -177,7 +178,7 @@
     background-image: url("../../assets/Resume/project-react.png"); /* Change to appropriate image URL */
     opacity: 1;
     z-index: 1000;
-    top: -35px;
+    top: 340px;
 
   }
   
@@ -228,12 +229,22 @@
         padding: 0 0 0 70px;
     }
 
+    .project-description.project-description-1:hover + .project-image-1 {
+        top: 420px;
+      }
+    .project-description.project-description-2:hover + .project-image-2 {
+        top: 400px;
+      }
     .project-description.project-description-3:hover + .project-image-3 {
         top: 125px;
       }
     
     .resume-main-heading a{
         font-size: 15px;
+    }
+
+    .resume-heading-description{
+        font-size: 13px;
     }
 
 
@@ -293,6 +304,9 @@
         margin-bottom: 0;
     }
 
+    .project-description.project-description-1:hover + .project-image-1 {
+        top: 120px;
+      }
     .project-description.project-description-2:hover + .project-image-2 {
         top: -230px;
       }
@@ -320,10 +334,10 @@
       }
 
     .resume-main-heading a{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .resume-heading-description{
-        font-size: 12px;
+        font-size: 11px;
     }
 }

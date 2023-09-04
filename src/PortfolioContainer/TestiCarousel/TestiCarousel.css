@@ -9,7 +9,7 @@
   .carousel-container {
     width: 85%;
     margin: 100px auto;
-    padding: 100px 20px;
+    padding: 80px 0;
     background-image: url("../../assets/Testimonial/testimonial-background.png");
     background-position: center;
     background-size: cover;
@@ -79,7 +79,6 @@
     .testi-item {
             
         max-width: 500px;
-        margin: 0 auto;
       }
   }
 
@@ -95,8 +94,13 @@
 
         .testi-item {     
             max-width: 330px;
-            margin: 0 auto;
           }
   
+  }
+
+  @media (max-width: 375px) {
+    .testi-item {     
+        max-width: 290px;
+      }
   }
   
