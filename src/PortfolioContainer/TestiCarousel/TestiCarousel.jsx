@@ -20,7 +20,6 @@ const TestiCarousel = () => {
   }, []);
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 1,
     },
@@ -56,7 +55,7 @@ const TestiCarousel = () => {
             </p>
           </div>
           <div className="client-info">
-            <img src="img/testimonial/lady.png" alt="lady-png" />
+            <img src="img/testimonial/user-solid.svg" alt="lady-png" />
             <h5>{data.testimonial_name_1}</h5>
             <p>{data.testimonial_name_title_1}</p>
           </div>
@@ -70,7 +69,7 @@ const TestiCarousel = () => {
             </p>
           </div>
           <div className="client-info">
-            <img src="img/testimonial/lady.png" alt="lady-png" />
+            <img src="img/testimonial/user-solid.svg" alt="lady-png" />
             <h5>{data.testimonial_name_2}</h5>
             <p>{data.testimonial_name_title_2}</p>
           </div>
@@ -85,29 +84,9 @@ const TestiCarousel = () => {
             </p>
           </div>
           <div className="client-info">
-            <img src="img/testimonial/lady.png" alt="lady-png" />
+            <img src="img/testimonial/user-solid.svg" alt="lady-png" />
             <h5>{data.testimonial_name_3}</h5>
             <p>{data.testimonial_name_title_3}</p>
-          </div>
-        </div>
-
-        <div className="testi-item">
-          <div className="testi-comment">
-            <p>
-              <i className="fa fa-quote-left" />
-              Depuis que je travaille avec Gabriel, l'engagement dans nos
-              articles et le nombre de commentaires a fait un énorme bond en
-              avant. Ses textes sont parfaitement rédigés, interconnectés, bien
-              structurés et faciles à lire. Gabriel est un professionnel et ça
-              change tout. (Un de nos articles a même été repris par la presse
-              papier !) Encore un immense merci Gabriel
-              <i className="fa fa-quote-right" />
-            </p>
-          </div>
-          <div className="client-info">
-            <img src="img/testimonial/lady.png" alt="lady-png" />
-            <h5>Adrien C.</h5>
-            <p>Créateur de contenus</p>
           </div>
         </div>
       </Carousel>

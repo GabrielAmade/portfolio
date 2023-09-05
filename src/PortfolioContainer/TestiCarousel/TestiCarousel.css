@@ -53,6 +53,7 @@
   .client-info img {
     height: 70px;
     width: 70px !important;
+    padding: 3px;
     border: 2px solid transparent;
     border-color: black;
     left: 0;
