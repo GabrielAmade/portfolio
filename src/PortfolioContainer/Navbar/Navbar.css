@@ -29,9 +29,9 @@
   
   .navbar-right a {
     font-family: 'Poppins', sans-serif;
+    color: black;
     margin-right: 50px; 
     text-decoration: none;
-    color: black;
   }
   
   .navbar-right a:last-child {
@@ -42,9 +42,8 @@
     color: var(--orange);
   }
   
- 
-  
   /* Media Queries */
+  
   @media (max-width: 768px) {
     .navbar {
       padding: 10px 20px; 

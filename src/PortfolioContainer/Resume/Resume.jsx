@@ -5,8 +5,6 @@ import data_fr from "../../datas_fr.json";
 import data_en from "../../datas_en.json";
 import data_it from "../../datas_it.json";
 
-
-
 function Resume() {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffSetStyle, setCarousalOffSetStyle] = useState({});
@@ -14,15 +12,19 @@ function Resume() {
 
   useEffect(() => {
     const detectedLanguage = navigator.language.split("-")[0];
-    if (detectedLanguage === "fr" || detectedLanguage === "en" || detectedLanguage === "it") {
+    if (
+      detectedLanguage === "fr" ||
+      detectedLanguage === "en" ||
+      detectedLanguage === "it"
+    ) {
       setLanguage(detectedLanguage);
     } else {
-      setLanguage("en"); 
+      setLanguage("en");
     }
   }, []);
 
-  const data = language === "en" ? data_en : language === "it" ? data_it : data_fr;
-
+  const data =
+    language === "en" ? data_en : language === "it" ? data_it : data_fr;
 
   const ResumeHeading = (props) => {
     return (

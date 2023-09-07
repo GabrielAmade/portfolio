@@ -9,11 +9,16 @@ import data_it from "../../datas_it.json";
 
 const Profile = () => {
   const [language, setLanguage] = useState("fr");
-  const data = language === "en" ? data_en : language === "it" ? data_it : data_fr;
+  const data =
+    language === "en" ? data_en : language === "it" ? data_it : data_fr;
 
   useEffect(() => {
     const detectedLanguage = navigator.language.split("-")[0];
-    if (detectedLanguage === "fr" || detectedLanguage === "en" || detectedLanguage === "it") {
+    if (
+      detectedLanguage === "fr" ||
+      detectedLanguage === "en" ||
+      detectedLanguage === "it"
+    ) {
       setLanguage(detectedLanguage);
     } else {
       setLanguage("en");

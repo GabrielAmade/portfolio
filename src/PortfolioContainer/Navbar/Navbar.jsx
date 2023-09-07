@@ -1,22 +1,27 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import data_en from '../../datas_en.json';
-import data_fr from '../../datas_fr.json';
-import data_it from '../../datas_it.json';
+import data_en from "../../datas_en.json";
+import data_fr from "../../datas_fr.json";
+import data_it from "../../datas_it.json";
 
 const Navbar = () => {
-  const [language, setLanguage] = useState('en'); 
+  const [language, setLanguage] = useState("en");
 
   useEffect(() => {
-    const detectedLanguage = navigator.language.split('-')[0];
-    if (detectedLanguage === 'fr' || detectedLanguage === 'en' || detectedLanguage === 'it') {
+    const detectedLanguage = navigator.language.split("-")[0];
+    if (
+      detectedLanguage === "fr" ||
+      detectedLanguage === "en" ||
+      detectedLanguage === "it"
+    ) {
       setLanguage(detectedLanguage);
     } else {
-      setLanguage('en'); 
+      setLanguage("en");
     }
   }, []);
 
-  const data = language === 'en' ? data_en : language === 'it' ? data_it : data_fr;
+  const data =
+    language === "en" ? data_en : language === "it" ? data_it : data_fr;
 
   return (
     <>
