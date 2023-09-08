@@ -14,6 +14,15 @@ app.use(cors())
 
 app.use("/", contactRoute);
 
+// Serve our api message
+app.get("/api/message", async (req, res, next) => {
+    try {
+      res.status(201).json({ message: "HELLO FROM EXPRESS" });
+    } catch (err) {
+      next(err);
+    }
+  });
+
 if(process.env.NODE_ENV === "production"){
     app.use(express.static("build"))
     app.get("*", (req, res)=>(
