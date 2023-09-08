@@ -14,6 +14,12 @@ app.use(cors())
 
 app.use("/", contactRoute);
 
+if(process.env.NODE_ENV === "production"){
+    app.use(express.static("portfolio/build"))
+    app.get("*", (req, res)=>(
+        res.sendFile(path.resolve(__dirname, "portfolio", "build", "index.html"))
+    ))
+}
 
 const port = process.env.PORT || 5001;
 app.listen(port, console.log(`server listening to port 5001`));

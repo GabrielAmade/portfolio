@@ -5,6 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import data_fr from "../../datas_fr.json";
 import data_en from "../../datas_en.json";
 import data_it from "../../datas_it.json";
+import userPicture from "../../../src/assets/TestiCarousel/user-solid.svg"
 
 const TestiCarousel = () => {
   const [language, setLanguage] = useState("fr");
@@ -55,7 +56,7 @@ const TestiCarousel = () => {
             </p>
           </div>
           <div className="client-info">
-            <img src="img/testimonial/user-solid.svg" alt="lady-png" />
+            <img src={userPicture} alt="user icon" />
             <h5>{data.testimonial_name_1}</h5>
             <p>{data.testimonial_name_title_1}</p>
           </div>
@@ -69,7 +70,7 @@ const TestiCarousel = () => {
             </p>
           </div>
           <div className="client-info">
-            <img src="img/testimonial/user-solid.svg" alt="lady-png" />
+            <img src={userPicture} alt="user icon" />
             <h5>{data.testimonial_name_2}</h5>
             <p>{data.testimonial_name_title_2}</p>
           </div>
@@ -84,7 +85,7 @@ const TestiCarousel = () => {
             </p>
           </div>
           <div className="client-info">
-            <img src="img/testimonial/user-solid.svg" alt="lady-png" />
+            <img src={userPicture} alt="user icon" />
             <h5>{data.testimonial_name_3}</h5>
             <p>{data.testimonial_name_title_3}</p>
           </div>
