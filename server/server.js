@@ -15,10 +15,10 @@ app.use(cors())
 app.use("/", contactRoute);
 
 if(process.env.NODE_ENV === "production"){
-    app.use(express.static("portfolio/build"))
+    app.use(express.static("build"))
     app.get("*", (req, res)=>(
-        res.sendFile(path.resolve(__dirname, "portfolio", "build", "index.html"))
-    ))
+        res.sendFile(path.resolve(__dirname, "build", "index.html"))
+    ));
 }
 
 const port = process.env.PORT || 5001;
